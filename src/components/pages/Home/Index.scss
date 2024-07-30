@@ -1,0 +1,122 @@
+@use '../../../styles/mixins';
+
+.home-outer-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(51, 24, 159, 0.05) 100%
+    );
+
+    .home-inner-container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 3.8em 1em;
+        row-gap: 20px;
+        column-gap: 36px;
+
+        .yatri-outer-container {
+            @include mixins.flex-center-div;
+            width: 100%;
+            flex: 1 1 20%;
+        }
+        .home-right-outer-container {
+            margin-top: 30px;
+            @include mixins.flex-center-div;
+            width: 100%;
+            flex: 1 1 70%;
+        }
+        .faq-outer-container {
+            @include mixins.flex-center-div;
+            width: 100%;
+            flex: 1 1 20%;
+
+            .container-wrapper {                
+                .locate-facility {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    line-height: 21.09px;
+                    cursor: pointer;
+                    border-radius: 16px;
+                    margin-bottom: 20px;
+                    padding: 0.6em 1.33em;
+                    background: rgba(255, 255, 255, 1);
+                    box-shadow: 4px 4px 18px -4px rgba(108, 105, 105, 0.2);
+                    
+                    .locate-facility-inner {
+                        @include mixins.flex-center-div;
+                        gap: 8px;
+                    }
+
+                    .left-vector {
+                        height: 12px;
+                    }
+                }
+            }
+        }
+        .pilgrim-outer-container {
+            @include mixins.flex-center-div;
+            width: 100%;
+            flex: 1 1 70%;
+        }
+    }
+
+    .footer-container {
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .home-outer-container {
+        .home-inner-container {
+            padding: 20px 50px 12px;
+            row-gap: 16px;
+            column-gap: 28px;
+
+            .yatri-outer-container {
+                display: none;
+            }
+
+            .home-right-outer-container {
+                order: 1;
+                flex: 1 1 100%;
+            }
+
+            .faq-outer-container {
+                order: 3;
+                flex: 1 1 100%;
+            }
+
+            .pilgrim-outer-container {
+                order: 2;
+                flex: 1 1 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .home-outer-container {
+        .home-inner-container {
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .home-outer-container {
+        .home-inner-container {
+            .home-right-outer-container {
+              margin-top: 0;
+            }
+
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@use '../../../styles/mixins';
+
+.back-button-wrapper-container {
+    @include mixins.flex-column();
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100vw;
+
+    .back-button-div {
+        @include mixins.flex-row-center();
+
+        .back-button {
+            background-color: transparent;
+            box-shadow: none;
+            margin-right: auto;
+
+            &:hover {
+                background-color: transparent;
+                box-shadow: none;
+            }
+        }
+    }
+
+    .title-container {
+        @include mixins.flex-row-center();
+    }
+}

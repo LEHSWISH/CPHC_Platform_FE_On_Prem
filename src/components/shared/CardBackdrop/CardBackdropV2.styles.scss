@@ -1,0 +1,65 @@
+.card-backdropv2-container {
+    .card-backdropv2 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(32, 32, 32, 0.8);
+        z-index: 99;
+        overflow: auto;
+
+        .card {
+            position: relative;
+            max-height: 90%;
+            min-height: fit-content;
+            background: rgba(255, 255, 255, 1);
+            border: 2px solid rgba(51, 24, 159, 0.1);
+            border-radius: 16px;
+            overflow: auto;
+            overflow-x: hidden;
+
+            .close {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                cursor: pointer;
+                background: white;
+                z-index: 10;
+            }
+
+            .component-container {
+                width: max-content;
+                height: max-content;
+                overflow: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-backdropv2-container {
+        .card-backdropv2 {
+            background: rgba(255, 255, 255, 1);
+
+            .card {
+                display: flex;
+                min-height: 100%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                background: rgba(255, 255, 255, 1);
+                border: none;
+                border-radius: 0;
+
+                .component-container {
+                    height: 100%;
+                    width: max-content;
+                }
+            }
+        }
+    }
+}

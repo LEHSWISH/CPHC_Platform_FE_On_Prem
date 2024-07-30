@@ -1,0 +1,131 @@
+.care-giver-parent {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 2.13em;
+    position: relative;
+
+    .parent-3dots {
+        position: relative;
+        width: 100%;
+
+        .three-dots {
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: 1.3em;
+            right: 1.3em
+        }
+    }
+
+    .child-1-1 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 0.56em;
+
+        .title {
+            p {
+                font-family: Roboto;
+                font-size: 1.33rem;
+                font-weight: 500;
+                line-height: 23px;
+                letter-spacing: 0em;
+                text-align: center;
+            }
+        }
+
+        .heading-description {
+            p {
+                font-family: Roboto;
+                font-size: 1.066rem;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: #6C6969;
+
+            }
+        }
+
+    }
+
+    .child-2-2-details {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0em 1.33em;
+        padding-bottom: 2.53em;
+        gap: 1em;
+
+        .name-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .username-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .phonenumber-details {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+
+    .care-giver-parent {
+        gap: 0;
+
+        .child-1-1 {
+            margin-top: 1.25em;
+            flex-direction: row;
+            width: 100%;
+
+            .heart-hand-logo {
+                width: 9%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .title {
+                    p {
+                        font-size: 1.125rem;
+                        font-weight: 500;
+                        line-height: 21.09px;
+
+                    }
+                }
+
+                .heading-description {
+                    p {
+                        font-size: 0.75rem;
+                        font-weight: 400;
+                        line-height: 14.06px;
+                    }
+                }
+
+            }
+        }
+
+        .child-2-2-details {
+            margin-top: 2em;
+        }
+    }
+
+}

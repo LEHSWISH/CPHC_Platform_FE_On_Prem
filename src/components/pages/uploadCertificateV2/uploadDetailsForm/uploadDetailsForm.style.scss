@@ -1,0 +1,122 @@
+@use '../../../../styles/mixins';
+
+.upload-details-form {
+    margin: 2rem auto 2rem;
+    max-width: min(60rem, 100vw);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    .card {
+        border: 1px solid rgba(51, 24, 159, 0.1);
+        border-radius: 16px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 1.5em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 1em;
+
+        &.green {
+            border: 1px solid rgba(51, 125, 56, 0.5);
+            flex-direction: row;
+            padding: 1em;
+            align-items: center;
+            .good-icon {
+                color: rgba(51, 125, 56, 1);
+            }
+            .info {
+                .text-1 {
+                    font-weight: 500;
+                    font-size: 1rem;
+                    color: rgba(32, 32, 32, 1);
+                }
+                .text-2 {
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: rgba(108, 105, 105, 1);
+                }
+            }
+        }
+
+        .card-title {
+            font-weight: 500;
+            color: rgba(51, 24, 159, 1);
+            font-size: 1rem;
+
+            .asterisk {
+                color: #d32f2f;
+            }
+        }
+
+        .file-row-item {
+            width: 100%;
+            background-color: rgba(51, 24, 159, 0.04);
+            border-radius: 0.5em;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .text {
+                font-weight: 400;
+                font-size: 1rem;
+                padding:  0.5em 0.5em 0.5em 0.75em;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-wrap: nowrap;
+            }
+
+            .icon-buttons-container {
+                margin-left: auto;
+
+                img {
+                    width: 1.2em;
+                }
+            }
+        }
+
+        .chips-container {
+            display: flex;
+            gap: 0.72em;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .form-field-pair {
+            width: 100%;
+            @include mixins.flex-row-center();
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 1.2em;
+
+            .field {
+                max-width: min(434px, 100%);
+
+                @media screen and (min-width: 1024px) {
+                    max-width: 48%;
+                }
+            }
+        }
+    }
+    .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .MuiFormControlLabel-asterisk {
+        color: #d32f2f;
+    }
+    .validation-message {
+        text-align: left;
+        padding: unset;
+        margin: unset;
+    }
+}

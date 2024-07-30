@@ -1,0 +1,95 @@
+.medical-records-container {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(51, 24, 159, 0.05) 100%
+    );
+
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+
+    .medical-records-title {
+        margin: 0 auto 1.5rem;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 2.2rem;
+        text-align: center;
+        color: rgba(51, 24, 159, 1);
+
+        .home-button-div {
+            display: none;
+        }
+    }
+
+    .mui-changes {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .mui {
+            .mui-first {
+                font-size: 1.3rem;
+            }
+
+            .mui-second {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .footer-container {
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .medical-records-container {
+        .breadcrumbs-container {
+            display: none;
+        }
+
+        .medical-records-title {
+            margin-top: 1.31em;
+            font-size: 1.2rem;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            width: 100%;
+            align-items: center;
+
+            .home-button-div {
+                display: block;
+
+                .home-button {
+                    text-transform: capitalize;
+                    margin-left: -8px;
+                }
+
+                .back-button-wrapper-container {
+                    .back-button-div {
+                        .back-button {
+                            padding: 0px;
+                            padding-left: 1.66em;
+                            font-size: 0.75rem;
+                            font-weight: 400;
+                            color: #33189f;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tabs-parent {
+            margin: 0;
+            .upload-tab {
+                font-size: 0.93rem;
+            }
+
+            .my-medical-tab {
+                font-size: 0.93rem !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.yatri-details-container{
+  margin: 0 auto 2rem;
+  max-width: 34rem;
+  width: 100%;
+  
+  .yatri-details-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    color: rgba(51, 24, 159, 1);
+    margin: 2.625rem auto 2.25rem;
+    text-align: center;
+  }
+
+  .form-fields{
+    margin: 0 10%;
+  }
+}

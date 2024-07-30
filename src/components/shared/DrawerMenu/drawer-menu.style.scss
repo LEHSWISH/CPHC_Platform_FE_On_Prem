@@ -1,0 +1,60 @@
+@use '../../../styles/mixins';
+
+.drawer-list {
+    .profile-card {
+        border-radius: 16px;
+        border: 1px solid rgba(51, 24, 159, 0.05);
+        background: linear-gradient(95deg, rgba(51, 24, 159, 0.10) 1.53%, rgba(51, 24, 159, 0.00) 99.38%);
+        width: inherit;
+        box-shadow: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.4rem;
+        cursor: pointer;
+
+        .card-info {
+            min-width: 0;
+
+            .primary {
+                color: #202020;
+                font-weight: 600;
+                @include mixins.ellipse-text();
+            }
+
+            .secondary {
+                color: #202020;
+                font-size: 0.9rem;
+                font-weight: 400;
+                @include mixins.ellipse-text();
+            }
+        }
+
+        .chevron-right {
+            margin-left: auto;
+        }
+    }
+}
+
+.drawer-list-group {
+    border-radius: 8px;
+    border: 1px solid rgba(108, 105, 105, 0.20);
+    background: #FFF;
+}
+
+.drawer-footer-links {
+    @include mixins.flex-row-center();
+    justify-content: space-evenly;
+    a {
+        color: #33189F;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.drawer-footer {
+    margin-top: auto;
+}

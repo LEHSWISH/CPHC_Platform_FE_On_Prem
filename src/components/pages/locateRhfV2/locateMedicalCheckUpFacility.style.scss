@@ -1,0 +1,166 @@
+.locate-medical-checkup-facility-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.05) 0%,
+        rgba(51, 24, 159, 0.05) 100%
+    );
+
+    @media screen and (max-width: 1024px) {
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .footer-container {
+        margin-top: auto;
+    }
+
+    .facility-locator-container-v2 {
+        width: 100%;
+        background: rgba(255, 255, 255, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        @media screen and (max-width: 1024px) {
+            flex-grow: 1;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 30rem;
+        }
+
+        @media screen and (max-width: 480px) {
+            width: 20rem;
+        }
+
+        .facility-locator-title {
+            font-size: 1.825rem;
+            font-weight: 700;
+            line-height: 2em;
+            text-align: center;
+            color: rgba(32, 32, 32, 1);
+            .back-medical-button-div{
+                display: none;
+            }
+            
+        }
+
+        .facility-locator-description {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.1875rem;
+            text-align: center;
+            color: rgba(108, 105, 105, 1);
+        }
+
+        .facility-form-container {
+            border: 1px solid rgba(108, 105, 105, 0.2);
+            box-shadow: 0px 2px 4px 0px rgba(32, 32, 32, 0.2);
+
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            padding: 1.5rem 6.5rem;
+
+            .MuiFormControl-root {
+                flex-grow: 1;
+            }
+            .MuiInputLabel-root {
+                color:#6C6969;
+             }      
+            &.direction-column {
+                flex-direction: column;
+                border: none;
+                box-shadow: none;
+
+                .search-button {
+                    margin: 0 auto;
+                    @media screen and (max-width:480px){
+                        margin-top: 20em;
+                    }
+                    @media screen and (max-width:1024px){
+                        margin-top: 10em;
+                        
+                    }
+                }
+            }
+            .search-button {
+                align-self: center;
+                max-height: 36px;
+                height: 100%;
+                max-width: 206px;
+                width: 100%;
+                display: block;
+                padding: 6px 0;
+                font-family: Mulish;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                cursor: pointer;
+                border-radius: 8px;
+                border: 2px solid rgb(51, 24, 159);
+                color: rgb(255, 255, 255);
+                background: rgb(51, 24, 159);
+                box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .locate-medical-checkup-facility-container {
+        .facility-locator-container-v2 {
+            width: 100%;
+            padding: 1.875em;
+            .breadcrumbs-container {
+
+                display: none;
+            }
+            .facility-locator-title {
+                display: grid;
+                color: #33189f;
+                font-weight: 600;
+                font-size: 1.125rem;
+                grid-template-columns: 1fr auto 1fr;
+                width: 100%;
+                line-height: 1;
+              
+                .back-medical-button-div{
+                    display: block;
+                    .back-button-wrapper-container{
+                        .back-button-div{
+                            padding: 0;
+                            .back-button{
+                                padding: 0 0em;
+                                font-size: 0.75rem;
+                                margin-left: -8px;
+                                margin-right: 0em;
+                                font-weight: 400;
+                            }
+                        }
+
+                    }
+
+                }
+                .locate-medical-span{
+                    max-width: 12.18em;
+                }
+            }
+            .facility-locator-description {
+                font-size: 0.875rem;
+            }
+            .facility-form-container {
+                padding: 0 0em;
+                margin-bottom: 4.375em;
+               
+                .MuiInputBase-input {
+                    color:#202020;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+}

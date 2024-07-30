@@ -1,0 +1,241 @@
+.link-abha-container {
+    padding: 60px 0;
+
+
+    .create-abha-heading {
+        font-size: 2.45rem;
+    }
+
+    .aadhar-number-block {
+        margin-top: 1.2rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .aadhar-number {
+            border-radius: 0.5rem;
+            background: rgba(51, 24, 159, 0.05);
+            padding: 0.5rem;
+            width: fit-content;
+            color: #202020;
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+    
+            span {
+                color: #33189F;
+                font-weight: 500;
+            }
+        }
+    }
+
+    form {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .MuiFormControl-root {
+            width: 100%;
+            max-width: 27.125rem;
+        }
+
+        .link-info {
+            color: var(--Neutral-1);
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 1.12rem;
+        }
+
+        button {
+            width: 100%;
+            max-width: 18.875rem;
+            text-align: center;
+            display: block;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding: 8px 0;
+            font-family: Mulish;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: normal;
+            cursor: pointer;
+            border-radius: 0.5rem;
+            border: 2px solid rgba(51, 24, 159, 1);
+            color: rgba(255, 255, 255, 1);
+            background: rgba(51, 24, 159, 1);
+            box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+
+
+        }
+    }
+
+    .abha-description {
+        font-size: 1.1rem;
+        margin: 20px 0;
+        color: #6C6969;
+    }
+
+    .create-abha-form {
+        width: 45%;
+
+        .form-fields {
+            // display: flex;
+            // flex-direction: column;
+            // gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .not-abha-div {
+            display: flex;
+            padding: 5px 0 15px 0;
+            align-items: center;
+
+            .not-abha-text {
+                font-size: 1.1rem;
+            }
+
+            .create-abha-button {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                margin-left: 10px;
+                text-decoration: underline;
+                color: rgba(51, 24, 159, 1);
+                cursor: pointer;
+            }
+        }
+
+        .link-abha-button {
+            width: 80%;
+            display: block;
+            margin: 30px auto 10px 0;
+            padding: 6px 0;
+            font-family: Mulish;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid rgb(51, 24, 159);
+            color: rgb(255, 255, 255);
+            background: rgb(51, 24, 159);
+            box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+        }
+    }
+
+    .link {
+        padding: 10px 0;
+        color: #33189F;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .link-abha-container {
+        .create-abha-form {
+            width: 66%;
+        }
+
+        .create-abha-heading {
+            font-size: 2rem;
+            line-height: 28px;
+        }
+
+        .form-fields {
+            margin-bottom: 3.75rem;
+
+            .username-container,
+            .password-container {
+                .checks-desc {
+                    font-size: 0.75rem;
+                    line-height: 16px;
+                }
+            }
+        }
+
+        .signup-button {
+            width: 70%;
+            font-size: 1rem;
+            line-height: 20px;
+        }
+
+        .login-route {
+            p {
+                font-size: 0.875rem;
+                line-height: 16px;
+            }
+
+            .navigate {
+                font-size: 1rem;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 628px) {
+    .link-abha-container {
+        .create-abha-form {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .link-abha-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        flex-grow: 1;
+        text-align: center;
+
+        .create-abha-form {
+            padding: 0 20px;
+            width: 100%;
+            .not-abha-div{
+                .not-abha-text{
+                    font-size: .7rem;
+                }
+                .create-abha-button{
+                    font-size: .7rem;
+                }
+            }
+            .link-abha-button{
+                font-size: .8rem;
+                width: 100%;
+            }
+        }
+
+        .create-abha-heading {
+            font-size: 1.5rem;
+            line-height: 32px;
+            font-weight: 500;
+            margin-bottom: 2.5rem;
+        }
+
+        form {
+            button{
+                margin-inline: auto;
+            }
+        }
+
+        .abha-description {
+            display: none;
+        }
+    }
+
+    .footer-container {
+        margin-top: auto;
+    }
+}
+

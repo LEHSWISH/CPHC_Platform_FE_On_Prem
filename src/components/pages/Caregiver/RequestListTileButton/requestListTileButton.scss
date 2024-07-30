@@ -1,0 +1,28 @@
+.care-giver-request-list-button-tile {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+
+    .child-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.43em;
+        padding-left: 1.25em;
+
+        .child-1-2 {
+            h1 {
+                font-family: Roboto;
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 16.41px;
+                text-align: left;
+
+            }
+        }
+    }
+    .child-2{
+            padding-right: 0.875em;
+    }
+}

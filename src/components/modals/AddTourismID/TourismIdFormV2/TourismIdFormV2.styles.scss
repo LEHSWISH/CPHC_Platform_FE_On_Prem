@@ -1,0 +1,160 @@
+@use '../../../../styles/mixins';
+
+.tourism-id-form-v2-container {
+    @media screen and (min-width: 1024px) {
+        margin-left: 3.66em;
+    }
+
+    .heading {
+        font-size: 2.133rem;
+        font-weight: 600;
+        line-height: 38px;
+        color: rgba(32, 32, 32, 1);
+        .home-button-mobile,
+        .title-mobile {
+            display: none;
+        }
+    }
+
+    .body {
+        .description-text {
+            font-size: 0.875rem;
+            margin: 1.66em 0 2em;
+            font-weight: 400;
+            line-height: 1rem;
+            color: var(--Neutral-2);
+        }
+        .description-box-for-mobile {
+            display: none;
+        }
+
+        form {
+            .field {
+                max-width: 65%;
+
+                @media screen and (max-width: 1024px) {
+                    max-width: 75%;
+                }
+
+                @media screen and (max-width: 480px) {
+                    max-width: 100%;
+                }
+            }
+            
+            .info-link-text {
+                width: fit-content;
+                cursor: pointer;
+                margin-top: 1em;
+                color: rgba(51, 24, 159, 1);
+                font-size: 1rem;
+                font-weight: 500;
+                @include mixins.flex-row-center();
+                gap: 1em;
+            }
+
+            .submit-button {
+                width: 100%;
+                max-width: 300px;
+                @include mixins.flex-row-center();
+                justify-content: center;
+                gap: 1em;
+                text-align: center;
+                margin: 7em 0 0.5em;
+                padding: 8px 0;
+                font-family: Mulish;
+                font-size: 1.06rem;
+                font-weight: 600;
+                line-height: 20px;
+                cursor: pointer;
+                border-radius: 8px;
+                border: 2px solid rgba(51, 24, 159, 1);
+                color: rgba(255, 255, 255, 1);
+                background: rgba(51, 24, 159, 1);
+                box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+            }
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .tourism-id-form-v2-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .heading {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            width: 100%;
+            align-items: center;
+            font-size: 1.1rem;
+            color: #33189f;
+            line-height: 21px;
+            .home-button-mobile {
+                display: flex;
+                font-size: 0.75rem;
+
+                .backbutton {
+                    text-transform: capitalize;
+                    font-size: 0.75rem;
+                    margin-left: -8px;
+                    font-weight: 400;
+                }
+                .back-button-wrapper-container {
+                    .back-button-div {
+                        .back-button {
+                            padding: 0px;
+                            font-size: 0.75rem;
+                            font-weight: 400;
+                            color: #33189f;
+                        }
+                    }
+                }
+            }
+
+            .title-web {
+                display: none;
+            }
+
+            .title-mobile {
+                display: block;
+            }
+        }
+        .body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3em;
+            .description-text {
+                display: none;
+            }
+            .description-box-for-mobile {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 3em 2.5em 2.75em 1.5em;
+                .description-text-for-mobile {
+                    font-size: 0.875rem;
+                    font-weight: 500;
+                    line-height: 1rem;
+                    color: var(--Neutral-2);
+                    line-height: 16px;
+                }
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                .info-link-text {
+                    font-size: 0.875rem;
+                    margin: 2.15em 1.35em 0 0.85em;
+                    gap: 0.38em;
+                    line-height: 16px;
+                }
+                .submit-button {
+                    max-width: 75%;
+                    font-size: 0.88rem;
+                    margin: auto auto 0;
+                }
+            }
+        }
+    }
+}

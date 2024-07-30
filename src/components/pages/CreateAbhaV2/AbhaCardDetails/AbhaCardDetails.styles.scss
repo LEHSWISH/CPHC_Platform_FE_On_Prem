@@ -1,0 +1,539 @@
+.abha-card-details-container {
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .abha-card-details-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3em;
+
+        .abha-card-details {
+            width: 80%;
+
+            .greeting-message {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2.13rem;
+                font-weight: 500;
+                line-height: 38px;
+                color: rgba(51, 24, 159, 1);
+                margin-bottom: 0.625em;
+            }
+            .created-message {
+                margin-left: 11em;
+                margin-right: 11em;
+            }
+            .loader1 {
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+                margin: 2em 2em;
+                box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.15);
+                .circular-task-component {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 3.625em;
+                    margin-bottom: 3em;
+                    .loader-container {
+                        .loader {
+                            height: 3.75em;
+                            width: 3.75em;
+                        }
+                    }
+                }
+                .loader1-heading {
+                    margin-bottom: 2.125em;
+                    color: #33189f;
+                    text-align: center;
+                    font-size: 1.06rem;
+                    font-weight: 400;
+                    margin-left: 13em;
+                    margin-right: 13em;
+                }
+            }
+
+            .created-message {
+                text-align: center;
+                font-size: 1.06rem;
+                font-weight: 400;
+                line-height: 19px;
+                color: rgba(32, 32, 32, 1);
+                padding-left: 2em;
+                padding-right: 2em;
+            }
+
+            .download-buttons {
+                display: flex;
+                margin-top: 5.2em;
+                padding: 0.2em;
+                gap: 20px;
+                text-align: center;
+
+                .download-links {
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    font-size: 1.06rem;
+                    font-weight: 400;
+                    line-height: 19px;
+                    color: rgba(51, 24, 159, 1);
+                }
+            }
+            .modify-button-center {
+                display: flex;
+                justify-content: center;
+
+                .goto-homepage-button {
+                    width: 100%;
+                    max-width: 300px;
+                    display: block;
+                    text-align: center;
+                    margin: 1.25em 0 0.5em;
+                    padding: 8px 0;
+                    font-family: Mulish;
+                    font-size: 1.06rem;
+                    font-weight: 600;
+                    line-height: 20px;
+                    cursor: pointer;
+                    border-radius: 8px;
+                    border: 2px solid rgba(51, 24, 159, 1);
+                    color: rgba(51, 24, 159, 1);
+                    background: rgba(255, 255, 255, 1);
+                    box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+                }
+            }
+        }
+    }
+
+    .abha-card-details-right {
+        flex: 0.5;
+        .abha-card-container {
+            padding: 20px;
+            width: fit-content;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            img {
+                display: block;
+                width: 60vw;
+                height: 60vh;
+                overflow: hidden;
+                max-width: 512px;
+            }
+        }
+    }
+}
+
+.abha-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abha-card-details-container-second-screen {
+    margin: 0 10%;
+    display: flex;
+    flex-direction: row;
+    .abha-card-mobile-header {
+        display: none;
+    }
+    .abha-card-details-left-second-screen {
+        flex: 0.5;
+        margin-top: 5em;
+
+        .abha-card-details-second-screen {
+            width: 80%;
+
+            .greeting-message-second-screen {
+                align-items: center;
+                font-size: 2.13rem;
+                font-weight: 500;
+                line-height: 38px;
+                color: rgba(51, 24, 159, 1);
+                margin-bottom: 0.625em;
+            }
+
+            .created-message-second-screen {
+                font-size: 1.06rem;
+                font-weight: 400;
+                line-height: 19px;
+                color: rgba(32, 32, 32, 1);
+            }
+
+            .sync-records-container {
+                width: 100%;
+                display: flex;
+                margin-block: 3em 0;
+                padding: 1.06em 1em 1.06em 0.75em;
+                border: 1px solid rgba(255, 184, 0, 0.2);
+                border-left: 4px solid rgba(255, 184, 0, 1);
+                border-radius: 4px;
+                background: rgba(255, 184, 0, 0.05);
+                color: rgba(32, 32, 32, 1);
+            
+                .sync-records-logo {
+                    img {
+                        margin-right: 0.8em;
+                        margin-top: -4px;
+                    }
+                }
+            
+                .sync-text-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    max-width: 70%;
+            
+                    .sync-title {
+                        font-size: 1.06rem;
+                        font-weight: 600;
+                        line-height: 18.75px;
+                    }
+            
+                    .sync-message {
+                        font-size: 0.93rem;
+                        font-weight: 400;
+                        line-height: 16.41px;
+                    }
+                }
+            
+                .sync-button-container {
+                    display: flex;
+                    align-items: end;
+                    margin-left: auto;
+            
+                    .sync-link {
+                        font-size: 1.06rem;
+                        line-height: 18.75px;
+                        color: rgba(51, 24, 159, 1);
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .download-buttons-second-screen {
+                display: flex;
+                margin-top: 5.2em;
+                padding: 0.2em;
+                gap: 20px;
+
+                .download-links-second-screen {
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    gap: 4px;
+                    font-size: 1.06rem;
+                    font-weight: 400;
+                    line-height: 19px;
+                    color: rgba(51, 24, 159, 1);
+                }
+            }
+            .modify-button-center-second-screen {
+                .goto-homepage-button-second-screen {
+                    width: 100%;
+                    max-width: 300px;
+                    display: block;
+                    text-align: center;
+                    margin: 1.25em 0 0.5em;
+                    padding: 8px 0;
+                    font-family: Mulish;
+                    font-size: 1.06rem;
+                    font-weight: 600;
+                    line-height: 20px;
+                    cursor: pointer;
+                    border-radius: 8px;
+                    border: 2px solid rgba(51, 24, 159, 1);
+                    color: rgba(51, 24, 159, 1);
+                    background: rgba(255, 255, 255, 1);
+                    box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+                }
+            }
+        }
+    }
+    .abha-card-details-right-second-screen {
+        flex: 0.5;
+        .abha-card-container-second-screen {
+            img {
+                display: block;
+                width: 60vw;
+                height: 60vh;
+                overflow: hidden;
+                max-width: 512px;
+                object-fit: cover;
+            }
+        }
+        .go-to-button-mobile-container {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1147px) {
+    .abha-card-details-container {
+        .abha-card-details-left {
+            margin-top: 2em;
+
+            .abha-card-details {
+                .created-message {
+                    margin-left: 3em;
+                    margin-right: 3em;
+                }
+                .loader1 {
+                    .circular-task-component {
+                        margin: 1.5em;
+                    }
+                    .loader1-heading {
+                        margin-left: 3em;
+                        margin-right: 3em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .create-abha-v2 {
+        .breadcrumbs {
+            padding: 0.1em;
+        }
+    }
+    .abha-card-details-container {
+        .abha-card-details-left {
+            .abha-card-details {
+                .loader1 {
+                    margin: 1.5em;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .abha-card-details-container {
+        .abha-card-details-left {
+            margin-top: 0em;
+
+            .abha-card-details {
+                .loader1 {
+                    .circular-task-component {
+                        margin-top: 3.625em;
+                        padding: 0.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 511px) {
+    body {
+        line-height: 1;
+    }
+    .abha-card-details-container {
+        .abha-card-details-left {
+            margin-top: 0em;
+
+            .abha-card-details {
+                .created-message {
+                    padding-left: 0em;
+                    padding-right: 0em;
+                    font-size: 0.88em;
+                }
+                .loader1 {
+                    margin: 0.5em;
+                    .circular-task-component {
+                        padding: 0.5em;
+                    }
+                    .loader1-heading {
+                        padding-left: 0em;
+                        padding-right: 0em;
+                        font-size: 0.88em;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 714px) {
+    .create-abha-v2 {
+        height: auto;
+        .abha-card-details-container-second-screen {
+            display: flex;
+            flex-direction: column;
+            .abha-card-details-left-second-screen {
+                margin-top: 2em;
+                .download-buttons-second-screen {
+                    margin-top: 0em;
+                }
+            }
+            .abha-card-details-right-second-screen {
+                .abha-card-container-second-screen {
+                    img {
+                        width: 70vw;
+                        height: 70vh;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1066px) {
+    .create-abha-v2 {
+        height: auto;
+        .abha-card-details-container-second-screen {
+            .abha-card-details-left-second-screen {
+                margin-top: 2em;
+
+                .abha-card-details-second-screen {
+                    .download-buttons-second-screen {
+                        margin-top: 3.2em;
+                    }
+                }
+            }
+        }
+        .abha-card-details-right-second-screen {
+            .abha-card-container-second-screen {
+                img {
+                    width: 40vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .create-abha-v2 {
+        .abha-card-details-container-second-screen {
+            margin: 0 5%;
+            .abha-card-details-left-second-screen {
+                margin-top: 0;
+                .abha-card-details-second-screen {
+                    width: 100%;
+                    .abha-card-mobile-header {
+                        display: grid;
+                        grid-template-columns: 1fr auto 1fr;
+                        align-items: center;
+                        width: 100%;
+                        margin-bottom: 1.87em;
+                        .home-button-mobile {
+                            .backbutton {
+                                text-transform: capitalize;
+                                margin-left: -8px;
+                            }
+                            .back-button-wrapper-container {
+                                .back-button-div {
+                                    .back-button {
+                                        padding: 0px;
+                                        font-size: 0.75rem;
+                                        font-weight: 400;
+                                        color: #33189f;
+                                    }
+                                }
+                            }
+                        }
+                        .abha-card-title {
+                            font-size: 1.12rem;
+                            font-weight: 600;
+                            line-height: 1.16em;
+                            color: #33189f;
+                        }
+                    }
+                    .greeting-message-second-screen {
+                        font-size: 1.12rem;
+                        font-weight: 600;
+                        line-height: 1.16em;
+                    }
+                    .created-message-second-screen {
+                        font-size: 0.875rem;
+                        font-weight: 500;
+                        line-height: 1.17em;
+                        color: #6c6969;
+                        max-width: 70%;
+                    }
+                    .download-buttons-second-screen {
+                        display: flex;
+                        justify-content: center;
+                        gap: 1em;
+                        margin-top: 2em;
+                        margin-bottom: 1.12em;
+                        .download-links-second-screen {
+                            font-size: 0.875rem;
+                            img {
+                                width: 20px;
+                            }
+                        }
+                    }
+                    .modify-button-center-second-screen {
+                        display: none;
+                    }
+                }
+            }
+
+            .abha-card-details-right-second-screen {
+                .abha-card-container-second-screen {
+                    img {
+                        width: 100%;
+                        height: 50vh;
+                    }
+                    .go-to-button-mobile-container {
+                        display: flex;
+                        justify-content: center;
+                        .goto-homepage-button-mobile {
+                            width: 100%;
+                            max-width: 278px;
+                            margin: 3em 0 1.42em;
+                            padding: 8px 0;
+                            font-family: Mulish;
+                            font-size: 0.875rem;
+                            font-weight: 500;
+                            line-height: 20px;
+                            cursor: pointer;
+                            border-radius: 8px;
+                            border: 1px solid rgba(51, 24, 159, 1);
+                            color: rgba(51, 24, 159, 1);
+                            background: rgba(255, 255, 255, 1);
+                            box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 396px) {
+    .create-abha-v2 {
+        .abha-card-details-container-second-screen {
+            .abha-card-details-right-second-screen {
+                .abha-card-container-second-screen {
+                    img {
+                        width: 100%;
+                        height: 45vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .create-abha-v2 {
+        .abha-card-details-container-second-screen {
+            .abha-card-details-right-second-screen {
+                .abha-card-container-second-screen {
+                    img {
+                        width: 100%;
+                        height: 40vh;
+                    }
+                }
+            }
+        }
+    }
+}

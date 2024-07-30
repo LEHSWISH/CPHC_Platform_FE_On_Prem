@@ -1,0 +1,190 @@
+.registration-outer-container-web {
+    width: 100%;
+    height: 100%;
+
+    .registration-container-logo {
+        position: absolute;
+        top: 1.25rem;
+        left: 2rem;
+        width: 250px;
+        height: 80px;
+        display: flex;
+
+        img {
+            width: 100%;
+            scale: .7;
+        }
+        .nhm-image{
+            scale: 1.2;
+        }
+    }
+    .registration-container-logo > :last-child{
+        border-right: none;
+    }
+
+    .registration-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100%;
+        gap: 2.375rem;
+
+        .stepper-container {
+            margin-top: 4.5rem;
+        }
+
+        .component-container {
+            flex-grow: 1;
+            box-shadow: -2px 2px 12px 0px rgba(38, 38, 38, 0.15);
+            padding: 0 8%;
+        }
+
+        .footer-container {
+            margin-top: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 1769px) {
+    .registration-container {
+        .stepper-container {
+            width: 50%;
+        }
+
+        .component-container {
+            width: 65%;
+        }
+    }
+}
+
+@media screen and (max-width: 1768px) {
+    .registration-container {
+        .stepper-container {
+            width: 48%;
+        }
+
+        .component-container {
+            width: 65%;
+        }
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .registration-container {
+        .stepper-container {
+            width: 52%;
+        }
+
+        .component-container {
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .registration-container {
+        .stepper-container {
+            width: 54%;
+        }
+
+        .component-container {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .registration-container {
+        .stepper-container {
+            width: 54%;
+        }
+
+        .component-container {
+            width: 82%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    // .registration-outer-container-web{
+    //     display: none;
+    // }
+
+    .registration-outer-container-tab {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .registration-container-tab {
+            max-width: 80%;
+            max-height: 80%;
+            box-shadow: -2px 2px 12px 0px rgba(38, 38, 38, 0.15);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+            overflow: auto;
+            
+
+            .registration-container-logo-tab {
+                display: flex;
+                align-self: flex-start;
+                width: 95px;
+                height: 95px;
+                margin: 1.5rem 0 0 3rem;
+
+                img{
+                    width: 100%;
+                    scale: .8;
+                }
+
+                .nhm-image{
+                    scale: 1.3;
+                }
+            }
+            
+            .component-container-tab {
+                width: 85%;
+            }
+
+            .footer-container{
+                margin-top: auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .registration-outer-container-tab {
+        width: 100%;
+        min-height: 100%;
+        height: fit-content;
+        
+        .registration-container-tab {
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+
+            .registration-container-logo-tab {
+                width: 75px;
+                height: 75px;
+                margin: 3.5rem auto 0;
+                display: flex;
+                justify-content: center;
+
+                img{
+                    width: 100%;
+                }
+            }
+            
+            .component-container-tab {
+                width: 90%;
+            }
+        }
+    }
+}

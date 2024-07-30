@@ -1,0 +1,62 @@
+.abha-pending-parent{
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 2.66em 4.5em;
+    width: 100%;
+    .abha-image{
+        display: flex;
+        justify-content: center;
+    }
+    .abha-pending-text{
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 28px;
+        text-align: center;
+        margin: 1.45em auto 0.83em;
+        color: rgba(199, 65, 58, 1);
+    }
+    .abha-pending-description{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 16px;
+        color: rgba(32, 32, 32, 1);
+    }
+    .buttons{
+        display: flex;
+        margin-top: 2.66em;
+        .proceed-button{
+            width: 70%;
+            margin: 50px auto 10px;
+            display: block;
+            padding: 6px 0;
+            font-family: Mulish;
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0 1rem 0 0;
+            line-height: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid rgb(51, 24, 159);
+            color: rgb(255, 255, 255);
+            background: rgb(51, 24, 159);
+            box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+        }
+        .cancel-button{
+            width: 70%;
+            margin: 50px auto 10px;
+            display: block;
+            padding: 6px 0;
+            font-family: Mulish;
+            margin: 0 0 0 1rem;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid rgb(51, 24, 159);
+            color: rgb(51, 24, 159);
+            background:rgb(255, 255, 255);
+            box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+        }
+    }
+}

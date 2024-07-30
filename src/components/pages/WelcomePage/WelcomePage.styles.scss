@@ -1,0 +1,167 @@
+.welcomepage-background {
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .container-wrapper {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow-y: auto;
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+            min-height: 100%;
+            width: 100%;
+
+            .welcomepage-inner-container {
+                width: 35%;
+                border-radius: 8px;
+                background: rgba(255, 255, 255, 1);
+                box-shadow: -2px 2px 12px 0px rgba(38, 38, 38, 0.15);
+                margin: 10px 0;
+                padding: 4em 3em;
+                text-align: center;
+
+                .welcome-header {
+                    font-size: 2.4rem;
+                    font-weight: 600;
+                    line-height: 42px;
+                    color: rgba(32, 32, 32, 1);
+                }
+
+                .welcome-message {
+                    font-size: 1.06rem;
+                    font-weight: 400;
+                    line-height: 19px;
+                    margin: 1.33em 0 2.5em;
+                    color: rgba(32, 32, 32, 1);
+                }
+
+                .welcome-image {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .divider-block {
+                    font-size: 1.06rem;
+                    font-weight: 700;
+                    line-height: 19px;
+                    margin: 2.5em 2em 1.33em;
+                    color: rgba(32, 32, 32, 1);
+
+                    span {
+                        margin: 0 0.75em;
+                    }
+                }
+
+                .signin-form {
+                    .form-description {
+                        font-size: 1rem;
+                        font-weight: 500;
+                        line-height: 19px;
+                        color: rgba(108, 105, 105, 1);
+                    }
+
+                    .fullname-container {
+                        margin: 2.66em 0;
+                    }
+
+                    .started-button {
+                        width: 70%;
+                        display: block;
+                        margin: 0 auto;
+                        padding: 8px 0;
+                        font-family: Mulish;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        line-height: 1.25rem;
+                        cursor: pointer;
+                        border-radius: 8px;
+                        border: 2px solid rgba(51, 24, 159, 1);
+                        color: rgba(255, 255, 255, 1);
+                        background: rgba(51, 24, 159, 1);
+                        box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .welcomepage-background {
+        .container-wrapper {
+            justify-content: center;
+            width: 100%;
+            .form-container {
+                align-items: center;
+                width: 100%;
+
+                .welcomepage-inner-container {
+                    width: 64%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcomepage-background {
+        background: none;
+        .container-wrapper {
+            .form-container {
+                // align-items: baseline;
+                width: 100%;
+                justify-content: stretch;
+
+                .welcomepage-inner-container {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0px;
+                    flex-grow: 1;
+                    border-radius: 0;
+                    padding: 4em 1.5em;
+
+                    .welcome-header {
+                        text-align: left;
+                        font-size: 2rem;
+                        font-weight: 500;
+                        line-height: 38px;
+                    }
+
+                    .welcome-message {
+                        text-align: left;
+                        font-size: 0.875rem;
+                        line-height: 16px;
+                    }
+
+                    .divider-block {
+                        font-size: 0.875rem;
+                        line-height: 16px;
+                        margin: 2.5em 1em;
+                    }
+
+                    .signin-form {
+                        .form-description {
+                            font-size: 1rem;
+                            line-height: 19px;
+                        }
+
+                        .started-button {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

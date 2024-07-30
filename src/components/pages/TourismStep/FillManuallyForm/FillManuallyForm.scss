@@ -1,0 +1,276 @@
+.fill-manually-form {
+    padding: 30px 0;
+    width: 100%;
+
+    .form-fields {
+        .change-style-manually {
+            display: flex;
+            justify-content: space-between;
+
+            .group-container {
+                width: 100%;
+            }
+        }
+    }
+
+    .manually-fill-button {
+        width: 50%;
+        display: block;
+        margin: 15px auto 10px 0;
+        padding: 6px 0;
+        font-family: Mulish;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: 2px solid rgb(51, 24, 159);
+        color: rgb(255, 255, 255);
+        background: rgb(51, 24, 159);
+        box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+    }
+
+    .skip-route,
+    .back-route {
+        margin: 10px 0;
+        .link-color {
+            color: rgb(51, 24, 159);
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .fill-manually-form {
+        .manually-fill-button {
+            width: 50%;
+        }
+
+        .form-fields {
+            .change-style-manually.column-data {
+                display: flex;
+                flex-direction: column;
+
+                .textfield-width-update {
+                    width: 100% !important;
+                    margin-block: 0;
+                }
+
+                .radiobutton-width-update {
+                    width: 100% !important;
+                    margin-bottom: 5px;
+                }
+
+                .tour-dates-container {
+                    width: 100% !important;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fill-manually-form {
+        .manually-fill-button {
+            width: 70%;
+            margin: 15px auto 10px;
+        }
+
+        .skip-route,
+        .back-route {
+            text-align: center;
+        }
+    }
+}
+
+// .create-abha-heading {
+//     font-size: 2.3rem;
+// }
+
+// .abha-description {
+//     font-size: 1rem;
+//     margin: 20px 0;
+//     color: #6C6969;
+// }
+
+// .create-abha-form {
+//     width: 100%;
+//     .not-abha-div {
+//         display: flex;
+//         padding: 5px 0 10px 0;
+
+//         .not-abha-text {
+//             font-size: 1.1rem;
+//             img{
+//                 height: 20px;
+//                 width: 20px;
+//             }
+//         }
+
+//         .create-abha-button {
+//             font-size: .95rem;
+//             font-weight: 400;
+//             line-height: 19px;
+//             margin-left: 10px;
+//             color: rgba(51, 24, 159, 1);
+//         }
+//     }
+// }
+
+// @media screen and (min-width: 1769px) {
+//     .create-abha-container {
+//         width: 55%;
+//     }
+// }
+
+// @media screen and (max-width: 1768px) {
+//     .create-abha-container {
+//         width: 58%;
+//     }
+// }
+
+// @media screen and (max-width: 1536px) {
+//     .create-abha-container {
+//         width: 90%;
+//     }
+// }
+
+// @media screen and (max-width: 1440px) {
+//     .create-abha-container {
+//         width: 75%;
+//     }
+// }
+
+// @media screen and (max-width: 1280px) {
+//     .create-abha-container {
+//         width: 100%;
+//     }
+// }
+
+// @media screen and (max-width: 1024px) {
+//     .create-abha-container {
+//         width: 64%;
+
+//         .create-abha-form {
+//             padding: 0 3rem;
+//         }
+
+//         .create-abha-heading {
+//             font-size: 2.25rem;
+//             // line-height: 2.625rem;
+//         }
+
+//         .abha-description {
+//             display: none;
+//         }
+
+//         .form-fields {
+//             margin-bottom: 3.75rem;
+
+//             .username-container,
+//             .password-container {
+//                 .checks-desc {
+//                     font-size: 0.75rem;
+//                     line-height: 1rem;
+//                 }
+//             }
+//         }
+
+//         .signup-button {
+//             width: 70%;
+//             font-size: 1rem;
+//             line-height: 1.25rem;
+//         }
+
+//         .signup-route {
+//             p {
+//                 font-size: 0.875rem;
+//                 line-height: 1rem;
+//             }
+
+//             .navigate {
+//                 font-size: 1rem;
+//                 line-height: 1.125rem;
+//             }
+//         }
+
+//     }
+// }
+
+// @media screen and (max-width: 480px) {
+//     .create-abha-container {
+//         width: 100%;
+//         display: flex;
+//         flex-direction: column;
+//         margin: 0px;
+//         flex-grow: 1;
+
+//         .page-logo {
+//             width: 75px;
+//             height: 75px;
+//             margin: 56px auto 28px;
+//         }
+
+//         .create-abha-form {
+//             padding: 0 1.25rem;
+//             width: 100%;
+//             .not-abha-div{
+//                 .not-abha-text{
+//                     font-size: .7rem;
+//                 }
+//                 .create-abha-button{
+//                     font-size: .7rem;
+//                 }
+//             }
+//             .link-abha-button{
+//                 font-size: .8rem;
+//                 width: 100%;
+//             }
+//         }
+
+//         .create-abha-heading {
+//             font-size: 1.5rem;
+//             // line-height: 2.375rem;
+//             font-weight: 500;
+//         }
+
+//         .abha-description {
+//             display: none;
+//         }
+//     }
+
+//     .form-fields {
+//         margin-bottom: 3.75rem;
+
+//         .username-container,
+//         .password-container {
+//             .checks-desc {
+//                 font-size: 0.6875rem;
+//                 line-height: 1rem;
+//             }
+//         }
+
+//         .terms-policy {
+//             font-size: 0.6875rem;
+
+//             .terms-checkbox {
+//                 width: 20px;
+//                 height: 20px;
+//             }
+//         }
+//     }
+
+//     .signup-button {
+//         width: 75%;
+//         font-size: 0.875rem;
+//         line-height: 1.125rem;
+//     }
+
+//     .signup-route {
+//         margin: 5px 0;
+//     }
+
+//     .footer-container {
+//         margin-top: auto;
+//     }
+// }

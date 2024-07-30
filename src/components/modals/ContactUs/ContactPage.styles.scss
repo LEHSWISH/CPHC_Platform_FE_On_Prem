@@ -1,0 +1,48 @@
+.contact-us-background {
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .container-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        overflow-y: auto;
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: fit-content;
+            min-height: 100%;
+            width: 50%;
+			position: relative;
+        }	
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-us-background {
+        .container-wrapper {
+            justify-content: center;
+            width: 100%;
+            .form-container {
+                align-items: center;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-us-background {
+        background: none;
+        .container-wrapper {
+            .form-container {
+                width: 100%;
+                justify-content: stretch;
+            }
+        }
+    }
+}

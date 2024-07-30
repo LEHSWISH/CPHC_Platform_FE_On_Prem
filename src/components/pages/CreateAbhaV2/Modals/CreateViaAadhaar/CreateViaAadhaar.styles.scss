@@ -1,0 +1,21 @@
+.create-aadhaar-container{
+  width: 60vw;
+  padding: 3em 2.66em 2.5em;
+  }
+
+  @media screen and (max-width: 480px) {
+    .create-aadhaar-container{
+      width: 100vw;
+      padding: 1.25em 1.25em 0;
+      height: 100%;
+      .step-component-container{
+        height: 100%;
+      }
+      .stepper-div{
+        display: none;
+      }
+      .stepper-line{
+        display: none;
+      }
+    }
+  }

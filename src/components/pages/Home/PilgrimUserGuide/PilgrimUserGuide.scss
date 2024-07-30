@@ -1,0 +1,59 @@
+.user-guide-pilgrims {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 16px;
+    padding: 2em;
+
+    .user-guide-text {
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 23px;
+        margin-bottom: 2.66em;
+        color: rgba(0, 0, 0, 1);
+    }
+    .pilgrim-steps {
+        margin: 20px 0 55px 0;
+
+        .MuiStepLabel-iconContainer:nth-child(1) {
+            svg:nth-child(1) {
+                path {
+                    color: #337d38;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1721px) {
+    .user-guide-pilgrims {
+        padding: 4em;
+    }
+}
+
+
+@media screen and (max-width: 1720px) and (min-width: 1537px) {
+    .user-guide-pilgrims {
+        padding: 3em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .user-guide-pilgrims {
+        padding: 20px;
+
+        .user-guide-text {
+            text-align: left;
+            font-size: 0.875rem;
+            line-height: 16px;
+            color: rgba(51, 24, 159, 1);
+            margin: 0 0 10px 10px;
+        }
+
+        .pilgrim-steps {
+            margin: 0;
+        }
+    }
+}

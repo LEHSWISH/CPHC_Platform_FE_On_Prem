@@ -1,0 +1,22 @@
+.find-tourism-id {
+    width: 100%;
+    max-width: 464px;
+    text-align: center;
+
+    .account-exists-meessage {
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 20px;
+        padding: 3em;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .find-tourism-id {
+        max-width: 376px;
+    }
+}
