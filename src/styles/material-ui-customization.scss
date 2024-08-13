@@ -1,0 +1,7 @@
+
+.MuiSelect-select.MuiSelect-standard.MuiInputBase-input.MuiInput-input {
+  // Removed select input background color on focus
+  &:focus {
+    background: none;
+  }
+}

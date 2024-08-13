@@ -1,0 +1,149 @@
+@use '../../../styles/mixins';
+
+.confirm-link-abha-container {
+    width: 100%;
+    max-width: 64rem;
+    padding: 3.33em 4.25em 3.33em 4.25em;
+
+    .title {
+        font-size: 2.13rem;
+        font-weight: 600;
+        line-height: 37.5px;
+        text-align: center;
+        margin-bottom: 0.525em;
+        color: rgba(32, 32, 32, 1);
+    }
+
+    .sub-title {
+        font-size: 0.93rem;
+        font-weight: 400;
+        line-height: 16.41px;
+        text-align: center;
+        color: rgba(108, 105, 105, 1);
+    }
+
+    .details-outer-container {
+        display: flex;
+        align-items: center;
+        gap: 3em;
+        margin-block: 2.25em 3.33em;
+
+        .profile-details-card {
+            padding: 2.1em 1.33em 2.2em;
+            border-radius: 16px;
+            box-shadow: 4px 4px 18px -4px rgba(108, 105, 105, 0.2);
+
+            .profile-detail {
+                padding: 0 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .profile-img {
+                    height: 80px;
+                    width: 80px;
+                }
+
+                .fullname {
+                    font-size: 1.33rem;
+                    font-weight: 500;
+                    line-height: 23.44px;
+                    margin-block: 0.6em 0.4em;
+                    color: rgba(32, 32, 32, 1);
+                }
+
+                .abha-number {
+                    font-size: 0.93rem;
+                    font-weight: 400;
+                    line-height: 16.41px;
+                    color: rgba(108, 105, 105, 1);
+                    text-wrap: nowrap;
+                }
+            }
+
+            .details-section {
+                margin-top: 16px;
+                border-top: 1px solid #20202033;
+                @include mixins.flex-column;
+
+                .details {
+                    display: flex;
+                    width: 100%;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin-top: 20px;
+                    gap: 0.5em;
+                    font-size: 0.93em;
+                    line-height: 16.41px;
+                    padding: 0 0.66em;
+                    color: rgba(32, 32, 32, 1);
+
+                    .detail-left {
+                        font-weight: 400;
+                    }
+
+                    .detail-right {
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .abha-address-container {
+            .abha-address-listing {
+                .list-instruction {
+                    font-size: 0.93rem;
+                    font-weight: 500;
+                    line-height: 16.41px;
+                    color: rgba(32, 32, 32, 1);
+                }
+
+                .list {
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 18.75px;
+                    text-align: left;
+                }
+            }
+
+            .separating-or {
+                font-size: 0.93rem;
+                font-weight: 400;
+                line-height: 16.41px;
+                margin-bottom: 1.7em;
+                text-align: center;
+                color: rgba(108, 105, 105, 1);
+            }
+
+            .abha-address-manually {
+                .manual-instruction {
+                    font-size: 0.93rem;
+                    font-weight: 500;
+                    line-height: 16.41px;
+                    margin-bottom: 1.15em;
+                    color: rgba(32, 32, 32, 1);
+                }
+            }
+        }
+    }
+
+    .continue-button {
+        width: 20rem;
+        padding: 8px 0;
+        display: block;
+        margin: 0 auto;
+        font-family: Mulish;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        cursor: pointer;
+        border-radius: 8px;
+        border: 2px solid rgba(51, 24, 159, 1);
+        color: rgba(255, 255, 255, 1);
+        background: rgba(51, 24, 159, 1);
+        box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+    }
+}

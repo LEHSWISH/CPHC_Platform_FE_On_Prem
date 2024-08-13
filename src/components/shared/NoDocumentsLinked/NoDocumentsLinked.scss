@@ -1,0 +1,52 @@
+@use '../../../styles/mixins';
+
+.nodocs-linked-container {
+    width: 100%;
+
+    .nodocs-inner-container {
+        width: 88%;
+        padding: 5em 0 8em;
+        margin: 0 auto;
+        text-align: center;
+        border-radius: 16px;
+        color: rgba(32, 32, 32, 1);
+        background: rgba(255, 255, 255, 1);
+        
+        .logo-container {
+            @include mixins.flex-center-div();
+        }
+        
+        .no-records-heading {
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 35px;
+            margin: 0.93em 0 0.53em;
+        }
+        
+        .no-records-message {
+            font-size: 1.33rem;
+            font-weight: 400;
+            line-height: 23px;
+        }
+    }   
+}
+
+@media screen and (max-width: 480px) {
+    .nodocs-linked-container {
+        .nodocs-inner-container {
+            width: 95%;
+            padding: 2.5em 0 5em;
+            
+            .no-records-heading {
+                font-size: 1.25rem;
+                line-height: 23px;
+                margin: 0.93em 0 0.53em;
+            }
+            
+            .no-records-message {
+                font-size: 1rem;
+                line-height: 19px;
+            }
+        }
+    }
+}

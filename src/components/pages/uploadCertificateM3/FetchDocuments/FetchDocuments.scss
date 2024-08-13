@@ -1,0 +1,196 @@
+.fetch-documents {
+    padding: 4em;
+
+    .fetch-document-paragraph {
+        padding-top: 1.86em;
+        padding-bottom: 2.4em;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .paragraph {
+            width: 80%;
+            font-size: 1.06rem;
+            color: #6c6969;
+            font-weight: 500;
+        }
+        .paragraph-mobile-view {
+            display: none;
+        }
+    }
+
+    .heading {
+        display: flex;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: #33189f;
+        .back-button-mobile-div{
+            display: none;
+        }
+    }
+
+    .form {
+        // margin: 2em;
+        display: flex;
+        flex-direction: column;
+        min-width: 500px;
+        width: 100%;
+
+        .health-info-heading {
+            margin-top: 0.93em;
+
+            .asterik {
+                color: #db3131;
+            }
+        }
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            padding: 20px 20px 20px 0;
+
+            .select-container-wraper {
+                label {
+                    margin-left: 0;
+                }
+            }
+        }
+        // .field-mobile-view{
+        //   display: flex;
+        //   width: 100%;
+        //   justify-content: space-between;
+        // }
+        .field {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .textfield-width-update {
+                width: 45%;
+            }
+        }
+        .field-mobile-view{
+          flex-direction: row;
+          display: flex;
+          justify-content: space-between;
+          .textfield-width-update {
+            width: 45%;
+          }
+        }
+
+        .checkbox-validation-message {
+            text-align: center;
+            color: #d32f2f;
+        }
+
+        .c-btn {
+            justify-content: center;
+            display: flex;
+            margin-top: 2.6em;
+            .btn-req {
+                background-color: rgba(51, 24, 159, 1);
+                color: rgba(255, 255, 255, 1);
+                border: 2px solid rgba(51, 24, 159, 1);
+                box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+                cursor: pointer;
+                border-radius: 8px;
+                font-size: 1rem;
+                font-weight: 500;
+                padding: 0.6em 5.23em 0.53em 5.23em;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fetch-documents {
+        padding: 0 1.25em;
+        padding-top: 1.31em;
+        width: 100vw;
+
+        .heading{
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            .back-button-mobile-div{
+                display: block;
+                .backbutton{
+                    text-transform: capitalize;
+                    margin-left: -8px;
+                    
+                }
+                .back-button-wrapper-container{
+                    .back-button-div{
+                        .back-button{
+                            padding: 0px;
+                            font-size: 0.75rem;
+                            font-weight: 400;
+                            color:#33189F;
+                        }
+                    }
+                }
+            }
+        }
+
+        .fetch-document-paragraph {
+            .paragraph {
+                font-size: 0.875rem;
+            }
+           
+        }
+
+        .span {
+            font-family: Roboto;
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 21.09px;
+            text-align: center;
+        }
+
+        .form {
+            min-width: 0px;
+
+            .field {
+                display: flex;
+                gap: 0.81em;
+
+                .textfield-width-update {
+                    width: 100%;
+                    font-family: Roboto;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    text-align: left;
+                }
+            }
+            .field-mobile-view{
+              flex-direction: column;
+              .textfield-width-update {
+                width: 100%;
+              }
+            }
+
+            .health-info-heading {
+                margin-top: 2.43em;
+                margin-bottom: 0.937em;
+            }
+            .form-group {
+                display: flex;
+                gap: 0.66em;
+                padding: 0em;
+                label {
+                    width: 100%;
+                }
+            }
+
+            .consent-request-button {
+                margin-top: 1.62em;
+            }
+
+            .checkbox-validation-message {
+                margin-top: 1em;
+            }
+        }
+    }
+}

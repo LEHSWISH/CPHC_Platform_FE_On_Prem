@@ -1,0 +1,100 @@
+.care-request-item-container {
+    margin-top: 2em;
+
+    &:not(:last-child) {
+        .div-underline {
+            border: 1px solid rgba(108, 105, 105, 0.2);
+        }
+    }
+
+    .care-giver-request-main {
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .care-giver-request-main-left {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+
+            .care-giver-request-user-name {
+                p {
+                    color: #000000;
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                    line-height: 21.09px;
+                }
+            }
+
+            .care-giver-request-phone-number {
+                p {
+                    color: #6c6969;
+                    font-weight: 400;
+                    font-size: 1.06rem;
+                    line-height: 18.75px;
+                }
+            }
+        }
+
+        .care-giver-request-main-right {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+
+            .care-giver-request-decline {
+                .decline-button-div {
+                    .decline-button {
+                        color: #33189f;
+                        font-weight: 600;
+                        font-size: 0.875rem;
+                        text-align: center;
+                        background-color: #ffffff;
+                        border: 2px solid #33189f;
+                        border-radius: 8px;
+                        box-shadow: 0 3px 6px 0px rgba(32, 32, 32, 0.3);
+                        padding-left: 1.28em;
+                        padding-right: 1.28em;
+                        padding-top: 0.4375em;
+                        padding-bottom: 0.5em;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .care-giver-request-accept {
+                .accept-button-div {
+                    .accept-button {
+                        color: #ffffff;
+                        background-color: #33189f;
+                        border: 2px solid #33189f;
+                        border-radius: 8px;
+                        text-align: center;
+                        font-size: 0.93rem;
+                        font-weight: 500;
+                        padding-left: 1.28em;
+                        padding-right: 1.28em;
+                        padding-top: 0.4375em;
+                        padding-bottom: 0.5em;
+                        box-shadow: 0 3px 6px 0px rgba(32, 32, 32, 0.3);
+                        cursor: pointer;
+                        &.disabled {
+                            opacity: 0.35;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .care-request-item-container {
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        .care-giver-request-main {
+        }
+    }
+}

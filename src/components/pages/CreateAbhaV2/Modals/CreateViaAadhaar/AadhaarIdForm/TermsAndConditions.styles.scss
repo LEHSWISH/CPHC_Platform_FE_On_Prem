@@ -1,0 +1,126 @@
+.terms-container {
+    width: 60vw;
+    padding: 2em 3em 2em 2em;
+    .terms-head-web {
+        display: flex;
+        align-items: center;
+        gap: 1.33em;
+        color: rgba(32, 32, 32, 1);
+
+        img {
+            cursor: pointer;
+        }
+
+        span {
+            font-size: 2.133rem;
+            font-weight: 600;
+            line-height: 38px;
+        }
+    }
+
+    .terms-head-mobile {
+        display: none;
+    }
+
+    .terms-body-wrapper {
+        margin: 2.53em 0 0 3.66em;
+
+        .terms-and-conditions {
+            font-size: 1.06em;
+            font-weight: 400;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 1);
+
+            .rowItem {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+
+                .label-text {
+                    padding-top: 9px;
+                }
+            }
+        }
+
+        .declaration-terms-points {
+            margin-left: 3em;
+            list-style-type: disc;
+        }
+
+        .accept-terms-button {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            text-align: center;
+            margin: 0.5em;
+            margin-top: 1em;
+            padding: 8px 0;
+            font-family: Mulish;
+            font-size: 1.06rem;
+            font-weight: 600;
+            line-height: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 2px solid rgba(51, 24, 159, 1);
+            color: rgba(255, 255, 255, 1);
+            background: rgba(51, 24, 159, 1);
+            box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+        }
+    }
+
+    .validation-message {
+        color: var(--Accent-1);
+        font-size: 0.875rem;
+        padding: 0.25rem 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .terms-container {
+        width: 100%;
+        padding: 0;
+        margin-top: 1.5em;
+        .terms-head-web {
+            display: none;
+        }
+
+        .terms-head-mobile {
+            display: block;
+
+            .header-with-nav {
+                display: grid;
+                grid-template-columns: 1fr auto 1fr;
+                align-items: center;
+                font-weight: 400;
+                color: rgba(51, 24, 159, 1);
+
+                .back-button-mobile-div {
+                    margin-left: 0.5rem;
+                    .backbutton {
+                        font-size: 0.75rem;
+                        line-height: 18px;
+                        font-weight: 400;
+                    }
+                }
+
+                .terms-header {
+                    font-size: 1.125rem;
+                    font-weight: 600;
+                    line-height: 21px;
+                }
+            }
+        }
+
+        .terms-body-wrapper {
+            margin: 1.5em 2em 1em 2.66em;
+
+            .terms-and-conditions {
+                font-size: 0.875em;
+            }
+
+            .accept-terms-button {
+                margin: 1em auto 0;
+            }
+        }
+    }
+}

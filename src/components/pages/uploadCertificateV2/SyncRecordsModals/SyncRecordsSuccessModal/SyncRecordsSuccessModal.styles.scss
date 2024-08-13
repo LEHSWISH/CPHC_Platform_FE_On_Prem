@@ -1,0 +1,23 @@
+.sync-success-container {
+    margin: 0 3.75em 2.75em;
+    max-width: 30rem;
+    width: 100%;
+    text-align: center;
+
+    .green-check {
+        margin: 2.5rem 0 2.25rem 0;
+    }
+
+    .success-message {
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 28px;
+        color: rgba(32, 32, 32, 1);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .sync-success-container {
+        max-width: 20rem;
+    }
+}

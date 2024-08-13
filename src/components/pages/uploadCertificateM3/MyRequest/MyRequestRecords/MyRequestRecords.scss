@@ -1,0 +1,117 @@
+.request-record-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    .request-row-one {
+        display: flex;
+        align-items: center;
+        font-size: 1.06rem;
+        font-weight: 500;
+        line-height: 19px;
+        color: rgba(32, 32, 32, 1);
+
+        span {
+            margin-inline: 8px 12px;
+            font-size: 1.2rem;
+            line-height: 21px;
+            color: rgba(51, 24, 159, 1);
+        }
+    }
+    .request-row-two {
+        display: flex;
+        align-items: center;
+        font-size: 1.06rem;
+        font-weight: 500;
+        line-height: 19px;
+
+        .document-duration {
+            color: rgba(32, 32, 32, 1);
+
+            span {
+                margin-left: 8px;
+                font-size: 1.06rem;
+                font-weight: 400;
+                line-height: 19px;
+                color: rgba(108, 105, 105, 1);
+            }
+        }
+
+        .divider {
+            margin-inline: 1.4rem;
+        }
+        .consent-expiry {
+            span {
+                margin-left: 8px;
+                font-size: 1.06rem;
+                font-weight: 400;
+                line-height: 19px;
+                color: rgba(108, 105, 105, 1);
+            }
+        }
+    }
+}
+
+.request-row-three {
+    font-size: 1.06rem;
+    font-weight: 500;
+    line-height: 19px;
+    color: rgba(32, 32, 32, 1);
+
+    .chip {
+        margin-left: 12px;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .request-record-container {
+        .request-row-one {
+            font-size: 0.875rem;
+            line-height: 16px;
+
+            span {
+                font-size: 1rem;
+                line-height: 19px;
+            }
+        }
+
+        .request-row-two {
+            flex-wrap: wrap;
+            gap: 9px;
+            font-size: 0.875rem;
+            line-height: 16px;
+            padding-top: 1em;
+    
+            .document-duration {    
+                span {
+                    font-size: 0.875rem;
+                    line-height: 16px;
+                }
+            }
+    
+            .divider {
+                display: none;
+            }
+            .consent-expiry {
+                span {
+                    font-size: 0.875rem;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+
+    .request-row-three {
+        font-size: 0;
+        line-height: 0;
+
+        .chip {
+            display: flex;
+            width: fit-content;
+            font-size: 0.875rem;
+            line-height: 16px;
+            margin-left: 0;
+            margin-bottom: 8px;
+        }
+    }
+}

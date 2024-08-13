@@ -1,0 +1,152 @@
+/*
+ * Global Stylesheet
+ * 
+ * This file sets up the global styles for the application, including font imports,
+ * root-level variables, base styles, and custom scrollbar styling. It ensures a consistent 
+ * look and feel across the entire application.
+ */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&family=Roboto:wght@400;500;700;900&display=swap');
+:root {
+    font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    /* colors */
+    --Neutral-1: #262626;
+    --Neutral-2: #6c6969;
+    --Accent-1: #c7413a;
+}
+
+input::-ms-reveal {
+    display: none;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-right: none;
+    border-left: none;
+}
+
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 15px;
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 15px;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.MuiTooltip-tooltip {
+    box-shadow: 4px 4px 18px -4px rgba(108, 105, 105, 0.3);
+}
+
+@media screen and (max-width: 1920px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1780px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    :root {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 854px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        font-size: 16px;
+    }
+
+    ::-webkit-scrollbar-track-piece:end {
+        margin-bottom: 0;
+    }
+
+    ::-webkit-scrollbar-track-piece:start {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    :root {
+        font-size: 15px;
+    }
+}

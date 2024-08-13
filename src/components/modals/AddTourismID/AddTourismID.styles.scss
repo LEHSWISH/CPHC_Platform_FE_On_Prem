@@ -1,0 +1,14 @@
+.add-tourism-id-container {
+    width: 60vw;
+    padding: 3.33em 2.66em 4em;
+
+    @media screen and (max-width: 1024px) {
+        width: 80vw;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+        height: 100%;
+        padding: 1.25em 1.25em 0;
+    }
+}

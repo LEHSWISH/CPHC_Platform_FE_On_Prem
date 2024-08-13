@@ -1,0 +1,156 @@
+.medical-declaration-container {
+    margin: 0 auto 2rem;
+    max-width: 64rem;
+    width: 100%;
+
+    .form-container-error{
+        padding: 1em 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-container-error-inside{
+        color: #d32f2f;
+    }
+    .flex-important {
+        display: flex !important;
+    }
+
+    .modal-title {
+        max-width: 14rem;
+        margin: 2.625rem auto 2.25rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+        text-align: center;
+        color: rgba(51, 24, 159, 1);
+        .home-button-div{
+            display: none;
+        }
+    }
+
+    .medical-query {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.1875rem;
+        text-align: center;
+        color: rgba(108, 105, 105, 1);
+    }
+
+    .chose-from {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1rem;
+        text-align: center;
+        color: rgba(108, 105, 105, 1);
+        margin: 0.75rem 0 2.25rem;
+        padding: 0 0.75rem;
+    }
+
+    .form-container {
+        max-width: 100%;
+        overflow: auto;
+
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .select-container-wraper {
+            label {
+                margin-left: 0;
+            }
+        }
+
+        .submit-declaration-button {
+            width: 19rem;
+            display: block;
+            margin: 0 auto;
+            padding: 8px 0;
+            font-family: Mulish;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.25rem;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 2px solid rgba(51, 24, 159, 1);
+            color: rgba(255, 255, 255, 1);
+            background: rgba(51, 24, 159, 1);
+            box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+        }
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .medical-declaration-container {
+        max-width: 48rem;
+
+        .select-container-wraper {
+            span {
+                font-size: 1rem;
+                line-height: 1.25;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .medical-declaration-container {
+        max-width: 30rem;
+        .form-container {    
+            .form-group {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .select-container-wraper {
+            span {
+                font-size: 1rem;
+                line-height: 0.75;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .medical-declaration-container {
+        .modal-title{
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 100%;
+            font-size: 1.12rem;
+            .home-button-div{
+                display: block;
+                .home-button{
+                    text-transform: capitalize;
+                    margin-left: -8px;
+                    
+                }
+                .back-button-wrapper-container{
+                    .back-button-div{
+                        .back-button{
+                            font-size: 0.75rem;
+                            font-weight: 400;
+                            color:#33189F;
+                        }
+                    }
+                }
+            }
+        }
+        .form-container {    
+            .form-group {
+                grid-template-columns: 1fr;
+            }
+            .select-container-wraper {
+                span {
+                    font-size: 0.75rem;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}

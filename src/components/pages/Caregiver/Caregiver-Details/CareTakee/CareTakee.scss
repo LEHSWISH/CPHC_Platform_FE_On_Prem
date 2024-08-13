@@ -1,0 +1,235 @@
+.care-takee {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 1.33em;
+
+    .care-takee-hedings {
+        padding-top: 1.33em;
+        display: flex;
+        flex-direction: column;
+        gap: 0.53em;
+
+        h1 {
+            font-family: Roboto;
+            font-size: 1.33rem;
+            font-weight: 500;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+
+        p {
+            font-family: Roboto;
+            font-size: 0.93rem;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #6C6969;
+        }
+    }
+
+
+    .care-takee-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        overflow: auto;
+
+        .care-takee-card-1 {
+            display: flex;
+            width: 100%;
+            padding-bottom: 1em;
+            cursor: pointer;
+            flex-direction: column;
+            border: 1px solid #6C696933;
+            border-radius: 16px;
+            box-shadow: 4px 4px 12px 0px #6C696933;
+            background: linear-gradient(180deg, #FDFCFF 0%, #F9F7FF 100%);
+            position: relative;
+            &:hover {
+                border: 1px solid rgba(51, 24, 159, 0.8);
+            }
+
+            .card-text-wrapper {
+                padding-top: 1.33em;
+                padding-left: 1.33em;
+                display: flex;
+                flex-direction: column;
+
+                p:nth-child(1) {
+                    font-family: Roboto;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    line-height: 21px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    padding-bottom: 7%;
+                    margin-right: 3rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                p:nth-child(2) {
+                    font-family: Roboto;
+                    font-size: 0.93rem;
+                    font-weight: 500;
+                    line-height: 16px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #6C6969;
+                    padding-bottom: 4%;
+                }
+
+                p:nth-child(3) {
+                    font-family: Roboto;
+                    font-size: 0.93rem;
+                    font-weight: 500;
+                    line-height: 16px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: #6C6969;
+                }
+            }
+
+
+
+
+            .three-dots {
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                top: 0.8em;
+                right: 0.8em
+            }
+
+            .high-risk-svg {
+                display: flex;
+                justify-content: flex-end;
+                border-radius: 13px;
+                margin-right: 0.8em;
+                margin-bottom: 0.8em;
+
+
+            }
+
+        }
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #b5b4b4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #6b6969;
+}
+
+@media screen and (max-width:1024px) {
+
+    .care-takee {
+        padding-left: 0em;
+        padding-right: 0em;
+
+        .care-takee-hedings {
+            padding-left: 1.5em;
+
+            h1 {
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 21.09px;
+                text-align: left;
+
+            }
+
+            p {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.06px;
+                text-align: left;
+
+            }
+        }
+
+        .care-takee-cards {
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            padding-bottom: 1.5rem;
+            flex-direction: row;
+            gap: 0.8125em;
+
+
+            .care-takee-card-1 {
+                min-width: 12rem;
+                .card-text-wrapper {
+                    padding-top: 0.75em;
+                    padding-left: 0.875em;
+                    gap: 0.6rem;
+
+                    p:nth-child(1) {
+                        font-family: Roboto;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        line-height: 18.75px;
+                        text-align: left;
+                        padding-bottom: 0;
+                    }
+
+                    p:nth-child(2) {
+                        font-family: Roboto;
+                        font-size: 0.75rem;
+                        font-weight: 500;
+                        line-height: 14.06px;
+                        text-align: left;
+                        padding-bottom: 0;
+                    }
+
+                    p:nth-child(3) {
+                        font-family: Roboto;
+                        font-size: 0.75rem;
+                        font-weight: 500;
+                        line-height: 14.06px;
+                        text-align: left;
+
+                    }
+                }
+
+                .three-dots {
+                    top: 0.625em;
+                    right: 0.625em;
+                }
+
+                .high-risk-svg {
+                    justify-content: flex-start;
+                    padding-left: 0.875em;
+                    margin-top: 0.75em;
+                    margin-bottom: 0.75em;
+
+                    img {
+                        width: 74px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

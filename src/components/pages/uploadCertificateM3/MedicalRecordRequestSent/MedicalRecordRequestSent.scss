@@ -1,0 +1,126 @@
+.medical-record-main-file {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8.4em;
+    //  height: 100%;
+    margin-top: 2em;
+    .request-sent-box-main {
+        
+        border: 1px solid #FFFFFF;
+        border-radius: 16px;
+        background-color: #ffffff;
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .request-sent-records {
+            // padding: 5.13em 19.86em 5.13em 19.86em;
+            padding: 5.13em 19.86em 4.13em 19.86em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            .request-sent-img-text{
+                .No-request-sent-image{
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            .fetch-record {
+                padding-top: 3em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .fetch-record-button {
+
+                    .fetch-btn {
+                        font-weight: 500;
+                        font-size: 1.06rem;
+                        background-color: #33189f;
+                        border: 2px solid #33189f;
+                        border-radius: 8px;
+                        color: #ffffff;
+                        padding: 0.6em 5.1em 0.6em 5.1em;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .request-sent-no-record-found{
+                font-size: 2rem;
+                font-weight: 500;
+                color: #202020;
+                text-align: center
+                ;
+            }
+            .request-sent-paragraph{
+                font-size: 1.33rem;
+                font-weight: 400;
+                color: #202020;
+                text-align: center;
+                ;
+
+            }
+        }
+    }
+    .bbtn{
+        .b{
+            font-weight: 500;
+            font-size: 1.06rem;
+            background-color: #33189f;
+            border: 2px solid #33189f;
+            border-radius: 8px;
+            color: #ffffff;
+            padding: 0.6em 5.1em 0.6em 5.1em;
+            cursor: pointer; 
+        }
+    }
+    .bbtn{
+        display: none;
+    }
+}
+@media screen and (max-width: 480px){
+     .medical-record-main-file{
+        margin-top: 7em;
+        padding-left: 1.3em;
+        padding-right: 1.3em;
+        border-radius: 16px;
+        margin-bottom: 2em;
+        // border: 2px solid black;
+        .request-sent-box-main{
+            padding: 2.81em 1.46em 2.81em 1.46em;
+            font-size: 1.2rem;
+            border-radius: 16px;
+            .request-sent-records{
+               
+                .request-sent-img-text{
+                    .No-request-sent-image{
+                        height: 41.67px;
+                        width: 39.58px;
+                    }
+                }
+                padding: 0 0em;
+                gap: 20px;
+                .request-sent-no-record-found{
+                 font-size: 1.33rem;
+                }
+                .request-sent-paragraph{
+                    font-size: 1.06rem;
+                }
+                .fetch-record{
+                    .fetch-record-button{
+                        .fetch-btn{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .bbtn{
+            display: block;
+            margin-top: 7em;
+        }
+     }
+}

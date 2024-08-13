@@ -1,0 +1,19 @@
+/**
+ * TypeScript Configuration File for Node.js
+ * 
+ * This file configures the TypeScript compiler options specifically for the Node.js environment.
+ * It enables composite projects, skips type checking for declaration files, and sets the module 
+ * system and resolution strategy. It also allows synthetic default imports.
+ */
+
+
+{
+    "compilerOptions": {
+        "composite": true,
+        "skipLibCheck": true,
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "allowSyntheticDefaultImports": true
+    },
+    "include": ["vite.config.ts"]
+}

@@ -1,0 +1,187 @@
+.recover-username-background {
+    height: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .container-wrapper {
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        overflow-y: auto;
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: fit-content;
+            min-height: 100%;
+            width: 50%;
+
+            .recover-username-container {
+                width: 75%;
+                border-radius: 8px;
+                background: rgba(255, 255, 255, 1);
+                box-shadow: -2px 2px 12px 0px rgba(38, 38, 38, 0.15);
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                .page-logo {
+                    width: 70%;
+                    height: 100px;
+                    margin: 30px auto 0;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        scale: 0.65;
+                        width: 100%;
+                        padding: 0 10px;
+                        display: flex;
+                        margin: 0px 10px;
+                        height: 90%;
+                    }
+
+                    .nhm-image {
+                        scale: 1.2;
+                    }
+                }
+
+                .recover-username-form {
+                    padding: 0 3rem;
+
+                    .recover-username-heading {
+                        text-align: center;
+                        margin-bottom: 28px;
+                        padding: 0;
+                        margin: 8px 0;
+                        font-size: 2.25rem;
+                        font-weight: 700;
+                        line-height: 2.625rem;
+                        color: rgba(32, 32, 32, 1);
+                    }
+
+                    .recover-username-description {
+                        font-weight: 600;
+                        line-height: 20px;
+                        font-size: 1.06rem;
+                        text-align: center;
+                        font-family: Mulish;
+                        margin-block: 0.875em 1.5em;
+                        color: rgba(108, 105, 105, 1);
+                    }
+
+                    .login-route{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 18px 0 2.25rem 0;
+                        gap: 8px;
+                  
+                        .navigate{
+                          font-size: 1rem;
+                          font-weight: 400;
+                          line-height: 1.1875rem;
+                          text-decoration: underline;
+                          color: rgba(51, 24, 159, 1);
+                        }
+                      }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1769px) {
+    .recover-username-container {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 1768px) {
+    .recover-username-container {
+        width: 58%;
+    }
+}
+
+@media screen and (max-width: 1536px) {
+    .recover-username-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .recover-username-container {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .recover-username-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .recover-username-background {
+        .container-wrapper {
+            justify-content: center;
+            width: 100%;
+
+            .form-container {
+                align-items: center;
+                width: 100%;
+                .recover-username-container {
+                    width: 64%;
+
+                    .page-logo {
+                        width: 95px;
+                        height: 95px;
+                        margin: 24px auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .recover-username-background {
+        background: none;
+
+        .container-wrapper {
+            .form-container {
+                width: 100%;
+                justify-content: stretch;
+                .recover-username-container {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0px;
+                    flex-grow: 1;
+
+                    .page-logo {
+                        width: 75px;
+                        height: 75px;
+                        margin: 56px auto 28px;
+                    }
+                    .recover-username-form {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 0px;
+                        flex-grow: 1;
+
+                        .page-logo {
+                            width: 75px;
+                            height: 75px;
+                            margin: 56px auto 28px;
+                        }
+                        .footer-container {
+                            margin-top: auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

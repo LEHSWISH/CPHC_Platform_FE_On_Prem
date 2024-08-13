@@ -1,0 +1,45 @@
+.failure-modal-container {
+    margin: 0 auto 2rem;
+    max-width: 30rem;
+    width: 100%;
+    text-align: center;
+
+    .caution-logo {
+        margin: 2.5rem 0 2.25rem 0;
+    }
+
+    .failure-alert {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+        color: rgba(32, 32, 32, 1);
+    }
+
+    .failure-message {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1rem;
+        margin: 1.25rem auto 2.5rem;
+        color: rgba(32, 32, 32, 1);
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .failure-modal-container {
+        max-width: 20rem;
+        .caution-logo {
+            margin-bottom: 1.25rem;
+            img{
+                max-height: 41px;
+            }
+        }
+        .failure-alert {
+            font-size: 1rem;
+            line-height: 1.17rem;
+        }
+        .failure-message {
+            margin-top: 0.875rem;
+        }
+    }
+}

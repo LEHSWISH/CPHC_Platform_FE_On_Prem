@@ -1,0 +1,180 @@
+.user-id-selection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 50px;
+    padding: 50px;
+
+    .title {
+        color: rgba(51, 24, 159, 1);
+        font-family: Roboto;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.6rem;
+        text-align: center;
+    }
+
+    button {
+        max-width: 300px;
+        align-self: center;
+        display: block;
+        text-align: center;
+        padding: 8px 55px;
+        font-family: Mulish;
+        font-size: 1.06rem;
+        font-weight: 600;
+        line-height: 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        border: 2px solid rgba(51, 24, 159, 1);
+        color: rgba(255, 255, 255, 1);
+        background: rgba(51, 24, 159, 1);
+        box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+    }
+}
+
+.form-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3.86em;
+    gap: 0.6em;
+
+
+    .form-up-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            font-family: Roboto;
+            font-size: 1.33rem;
+            font-weight: 600;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: center;
+            margin: 0 0.9em;
+        }
+
+        p {
+            font-family: Roboto;
+            font-size: 0.99rem;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #6C6969;
+            margin-top: 1.06em;
+
+        }
+    }
+
+}
+
+.personal-details-form {
+    width: 100%;
+
+    .form-middle {
+        padding-left: 3.86em;
+        padding-right: 3.8em;
+        margin-top: 3.66em;
+    }
+
+    .form-down {
+        margin-top: 7.53em;
+
+
+        .form-down-up {
+            display: flex;
+            justify-content: center;
+            padding-right: 5.46em;
+            padding-left: 4.66em;
+
+
+            .text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: Mulish;
+                font-size: 0.8rem;
+                font-weight: 500;
+                line-height: 15px;
+                letter-spacing: 0em;
+            }
+        }
+
+        .form-down-down {
+            margin-bottom: 3.46em;
+            display: flex;
+            justify-content: center;
+
+            .get-otp-button {
+
+                width: 35%;
+                max-width: 300px;
+                display: block;
+                text-align: center;
+                margin: 1.25em 0 0.5em;
+                padding: 8px 0;
+                font-family: Mulish;
+                font-size: 1.06rem;
+                font-weight: 600;
+                line-height: 20px;
+                cursor: pointer;
+                border-radius: 8px;
+                border: 2px solid rgba(51, 24, 159, 1);
+                color: rgba(255, 255, 255, 1);
+                background: rgba(51, 24, 159, 1);
+                box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .personal-details-form {
+        .form-middle {
+            padding-left: 1.25em;
+            padding-right: 1.25em;
+        }
+
+        .form-down {
+            margin-top: 2.18em;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+
+            .form-down-up {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+
+                .text {
+                    font-family: Mulish;
+                    font-size: 0.75rem;
+                    font-weight: 500;
+                    line-height: 15.06px;
+                    text-align: left;
+
+                }
+
+            }
+
+            .form-down-down {
+                padding: 0;
+                margin: 0;
+                margin-bottom: 1.9em;
+
+                .get-otp-button {
+                    width: 50%;
+                }
+            }
+
+        }
+
+    }
+
+}

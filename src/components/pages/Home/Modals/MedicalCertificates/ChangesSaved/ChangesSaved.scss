@@ -1,0 +1,32 @@
+.saved-certificate-container {
+    margin: 0 auto 2rem;
+    max-width: 30rem;
+    width: 100%;
+    text-align: center;
+
+    .green-check {
+        margin: 2.5rem 0 2.25rem 0;
+    }
+
+    .success-message {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+        color: rgba(51, 125, 56, 1);
+    }
+
+    .saved-message {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1rem;
+        color: rgba(32, 32, 32, 1);
+        margin-top: 1.5rem;
+        margin-inline: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .saved-certificate-container {
+    max-width: 20rem;
+    }
+}

@@ -1,0 +1,99 @@
+@use '../../../../styles/mixins.scss';
+
+.yatriDetails {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 16px;
+    width: 100%;
+    padding: 1.5em;
+
+    .profile-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 30%;
+
+        .high-risk {
+            border: 1px solid #c7413a;
+            border-radius: 15px;
+            height: 30px;
+            color: #c7413a;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            padding: 5px 0;
+            width: 100px;
+            margin: 5% 0 0 70%;
+
+            img {
+                margin-right: 5px;
+                height: 15px;
+                width: 15px;
+            }
+        }
+
+        img {
+            height: 35px;
+            width: 35px;
+        }
+        .profile-heading {
+            font-size: 18px;
+        }
+
+        .profile-completion {
+            background: #337d3814;
+            height: 30px;
+            border-radius: 15px;
+            color: green;
+            padding: 5px 12px;
+            margin-top: 10px;
+            @media screen and (max-width: 1020px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .details-section {
+        margin-top: 10px;
+        border-top: 1px solid #20202033;
+        @include mixins.flex-column;
+    }
+
+    .details {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        gap: 0.5em;
+
+        .masked {
+            @include mixins.flex-row-center;
+            // p {
+            //     text-align: center;
+            // }
+        }
+        .status-pending {
+            background: rgba(199, 65, 58, 0.0784313725);
+            padding: 0.5em 1em;
+            color: #c7413a;
+            border-radius: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            margin-right: auto;
+            &:before {
+                content: '\2022';
+                font-size: 2rem;
+                line-height: 16px;
+            }
+        }
+    }
+}
+.addGovtIdModal-unique {
+    width: 75%;
+    margin: 0 auto;
+}

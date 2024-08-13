@@ -1,0 +1,101 @@
+.confirmation-modal-container {
+    margin: 0 auto 2.5em;
+    max-width: 30rem;
+    width: 100%;
+    text-align: center;
+
+    .confirmation-heading {
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+        color: rgba(32, 32, 32, 1);
+        margin-top: 2.5em;
+        color:  #33189F;
+    }
+    
+    .confirmation-message {
+        font-family: Mulish;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.34rem;
+        margin: 1.25rem auto 2.5rem;
+        color: rgba(32, 32, 32, 1);
+        max-width: 80%;
+    }
+    .button-container {
+        
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        .cancel-button {
+            width: 10rem;
+            padding: 8px 0;
+            font-family: Mulish;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.25rem;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 2px solid rgba(51, 24, 159, 1);
+            background: rgba(255, 255, 255, 1);
+            color: rgba(51, 24, 159, 1);
+            box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+        }
+        
+        .confirm-button {
+            width: 10rem;
+            padding: 8px 0;
+            font-family: Mulish;
+            font-size: 1rem;
+            font-weight: 600;
+            line-height: 1.25rem;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 2px solid rgba(51, 24, 159, 1);
+            color: rgba(255, 255, 255, 1);
+            background: rgba(51, 24, 159, 1);
+            box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .confirmation-modal-container {
+        max-width: 20rem;
+        .confirmation-heading {
+            font-size: 1.12rem;
+            font-weight: 600;
+            line-height: 1.3rem;
+            color: rgba(32, 32, 32, 1);
+            margin-top: 2.5em;
+            color:  #33189F;
+        }
+
+        .confirmation-message {
+            font-family: Mulish;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 1rem;
+            margin: 1.25rem auto 2.5rem;
+            color: rgba(32, 32, 32, 1);
+            max-width: 80%;
+        }
+
+        .button-container{
+            display: flex;
+            margin: 0;
+            justify-content: center;
+            .cancel-button{
+                width: 8rem;
+                font-size: 0.875rem;
+                font-weight: 500;
+            }
+            .confirm-button{
+                width: 8rem;
+                font-weight: 500;
+                font-size: 0.875rem;
+            }
+        }
+    }
+}

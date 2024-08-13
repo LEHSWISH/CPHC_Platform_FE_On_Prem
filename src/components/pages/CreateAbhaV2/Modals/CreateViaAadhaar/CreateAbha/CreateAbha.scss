@@ -1,0 +1,143 @@
+.abha-address-form-container {
+    margin-left: 3.66em;
+    padding: 0 4em;
+    .step-text-div{
+        display: none;
+    }
+    .abha-head {
+        font-size: 2.133rem;
+        font-weight: 600;
+        line-height: 38px;
+        color: rgba(32, 32, 32, 1);
+        margin-top: -0.5em;
+    }
+
+    .abha-body {
+        .abha-description {
+            font-size: 1.066rem;
+            margin: 1em 0 2em;
+            font-weight: 500;
+            line-height: 19px;
+            color: rgba(108, 105, 105, 1);
+        }
+
+        form {
+            .error-messages{
+                margin: 2em 1em;
+                .first{
+                    color: gray;
+                }
+                .error{
+                    color: red;
+                }
+                .valid{
+                    color: green;
+                }
+            }
+            .suggestions{
+                margin: 1em 0;
+                .suggestions-parent{
+                    margin: 1em 0;
+                    display: flex;
+                .suggestion{
+                    width: fit-content;
+                    cursor: pointer;
+                    padding: 10px;
+                    border-radius: 20px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    margin: 0 .5em;
+                }
+            }
+            }
+            .create-button {
+                width: 100%;
+                max-width: 300px;
+                display: block;
+                text-align: center;
+                margin: 1.25em 0 0.5em;
+                padding: 8px 0;
+                font-family: Mulish;
+                font-size: 1.06rem;
+                font-weight: 600;
+                line-height: 20px;
+                cursor: pointer;
+                border-radius: 8px;
+                border: 2px solid rgba(51, 24, 159, 1);
+                color: rgba(255, 255, 255, 1);
+                background: rgba(51, 24, 159, 1);
+                box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+            }
+        }
+    }
+}
+@media screen and (max-width:480px) {
+
+    .abha-address-form-container {
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        padding: 0;
+        .step-text-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: 600;
+            line-height: 14.06px;
+            color: #6C6969;
+            margin-bottom: 1.33em;
+
+        }
+        .abha-head{
+            font-size: 1.13rem;
+            color:  #33189F;
+            display: flex;
+            justify-content: center;
+            line-height: 21px;
+        }
+
+        .abha-body{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            .abha-description{
+                font-size: 0.88rem;
+                margin: 2.27em 0 2em;
+                text-align: center;
+                line-height: 16px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                .textfield{
+                    max-width: 100%;
+                }
+                .error-messages{
+                    font-size: 0.69rem;
+                    margin: 2em;
+                   
+                }
+                .suggestions{
+                    font-size: 0.75rem;
+                    color: #33189F;
+                    
+                    .suggestions-parent{
+                        font-size: 0.88rem;
+                        color:#202020;
+                        overflow-x: hidden;
+                    }
+                }
+                .create-button {
+                    font-size: 0.88rem;
+                    max-width: 278px;
+                    margin: auto auto 10.79em;
+                }
+
+            }
+        }
+    }
+    
+}

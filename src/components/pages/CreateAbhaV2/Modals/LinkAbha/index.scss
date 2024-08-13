@@ -1,0 +1,186 @@
+.abha-id-form-container {
+    padding: 4em;
+    max-width: 600px;
+    .aadhaar-head {
+        font-size: 2.133rem;
+        font-weight: 600;
+        line-height: 38px;
+        color: rgba(32, 32, 32, 1);
+    }
+
+    .aadhaar-body {
+        .aadhaar-description {
+            font-size: 1.066rem;
+            margin: 1.66em 0 2em;
+            font-weight: 500;
+            line-height: 19px;
+            color: rgba(108, 105, 105, 1);
+        }
+
+        .form-container {
+            margin: 1em 1em 4em 1em;
+
+            .identity-dropdown {
+                width: 50%;
+                margin-bottom: 1.06em;
+            }
+
+            form {
+                .terms-policy {
+                    display: flex;
+                    width: 80%;
+                    align-items: center;
+                    gap: 0.5em;
+                    font-size: 0.75rem;
+                    margin-top: 7vh;
+                    padding-block: 0.8em;
+                    border: 1px solid rgba(108, 105, 105, 0.5);
+                    border-radius: 8px;
+
+                    .terms-checkbox {
+                        margin-left: 8px;
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    p {
+                        font-size: 0.93rem;
+                        line-height: 16px;
+                        color: rgba(38, 38, 38, 1);
+
+                        span {
+                            font-size: 1.06rem;
+                            font-weight: 400;
+                            line-height: 19px;
+                            cursor: pointer;
+                            color: rgba(51, 24, 159, 1);
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .forgot-abha-number{
+                    margin: 1em 0;
+                    text-decoration: underline;
+                    color: rgba(51, 24, 159, 1);
+                    cursor: pointer;
+                }
+            }
+        }
+        .get-otp-button {
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            text-align: center;
+            margin: 1.25em 0 0.5em;
+            padding: 8px 0;
+            font-family: Mulish;
+            font-size: 1.06rem;
+            font-weight: 600;
+            line-height: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 2px solid rgba(51, 24, 159, 1);
+            color: rgba(255, 255, 255, 1);
+            background: rgba(51, 24, 159, 1);
+            box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+        }
+
+        .existing-abha-number {
+            display: flex;
+            align-items: center;
+            padding-block: 0.7em;
+            margin-left: 12px;
+            gap: 8px;
+
+            .abha-text {
+                font-size: 0.93rem;
+                font-weight: 400;
+                line-height: 16px;
+                color: rgba(38, 38, 38, 1);
+            }
+
+            .link-abha {
+                font-size: 1.06rem;
+                font-weight: 400;
+                line-height: 19px;
+                text-decoration: underline;
+                color: rgba(51, 24, 159, 1);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .abha-id-form-container {
+        padding: 1.3em 1.25em 0em 1.25em;
+
+        .aadhaar-head {
+            font-family: Roboto;
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.4em;
+            text-align: center;
+            color: rgba(51, 24, 159, 1);
+
+        }
+
+        .aadhaar-body {
+            .aadhaar-description {
+                font-family: Roboto;
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 1.1em;
+                letter-spacing: 0em;
+                text-align: center;
+
+            }
+
+            .form-container {
+                margin: 2em 0 4em 0;
+                .identity-dropdown {
+                    width: 100%;
+                }
+
+                form {
+                    .phonenumber-field {
+                        max-width: 100%;
+                    }
+
+                    .abha-number-field {
+                        max-width: 100%;
+                    }
+
+                    .abha-address-field {
+                        max-width: 100%;
+                    }
+
+                    .aadhaar-number-field {
+                        max-width: 100%;
+                    }
+
+                    .forgot-abha-number {
+                        padding-left: 1em;
+                    }
+                }
+            }
+
+            .get-otp-button {
+                margin: 0 auto;
+                font-size: 0.875rem;
+                max-width: 278px;
+            }
+
+            .existing-abha-number {
+                justify-content: center;
+                .abha-text {
+                    font-size: 0.75rem;
+                }
+                .link-abha{
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+
+}

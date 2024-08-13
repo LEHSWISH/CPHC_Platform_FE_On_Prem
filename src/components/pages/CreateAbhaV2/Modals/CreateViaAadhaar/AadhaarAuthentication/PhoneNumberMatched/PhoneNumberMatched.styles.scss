@@ -1,0 +1,35 @@
+.number-matched-container {
+    width: 100%;
+    padding: 2.66em;
+    max-width: 464px;
+    text-align: center;
+
+    .matched-message {
+        font-size: 1.2rem;
+        margin: 2em 0 2.4em;
+        font-weight: 500;
+        line-height: 21px;
+    }
+
+    .continue-button {
+        width: 100%;
+        max-width: 50%;
+        text-align: center;
+        padding: 8px 0;
+        font-size: 1.06rem;
+        font-weight: 600;
+        line-height: 20px;
+        cursor: pointer;
+        border-radius: 8px;
+        border: 2px solid rgba(51, 24, 159, 1);
+        color: rgba(255, 255, 255, 1);
+        background: rgba(51, 24, 159, 1);
+        box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+    }
+}
+
+// @media screen and (min-width: 481px) and (max-width: 1024px) {
+//     .number-matched-container {
+//         max-width: 376px;
+//     }
+// }

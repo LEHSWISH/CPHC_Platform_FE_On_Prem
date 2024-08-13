@@ -1,0 +1,78 @@
+{
+    "common_success_messages": {
+        "login_success": "Logged in successfully."
+    },
+    "common_error_messages": {
+        "token-expired": "Please login again, token expired",
+        "something_went_wrong": "Something Went Wrong.",
+        "required-abha": "Please enter your ABHA number.",
+        "otp-invalid": "Invalid OTP. Try again by clicking on resend.",
+        "invalid-abha": "Invalid ABHA number. Please try again.",
+        "invalid-abha-length": "ABHA number can only be of 14 digits",
+        "already-exist-abha": "An account with this ABHA number already exists.",
+        "invalid-aadhar": "Invalid Aadhaar number. Please try again.",
+        "invalid-aadhar-length": "Aadhaar number must be exactly 12 characters",
+        "required-aadhar": "Please enter your Aadhaar number.",
+        "invalid-phone-number": "Please enter a valid phone number.",
+        "required-phone-number": "Phone number must be exactly 12 characters",
+        "invalid-phone-length": "Please enter your phone number.",
+        "login_failed_invalid": "Login failed, invalid credentials",
+        "wrong_password": "Wrong Password. Try again or click Forgot Password to reset it.",
+        "wrong_username": "Account with this username doesn’t exist.",
+        "incorrect_idtp": "Incorrect IDTP"
+    },
+    "common_action_text": {
+        "skip_for_later": "Skip for later",
+        "verify_&_continue": "Verify & Continue",
+        "verify_&_Link": "Verify & Link",
+        "change": "Change",
+        "resend": "Resend",
+        "change_of_mind": "Change of mind ?",
+        "phone_number": "Phone number"
+    },
+    "mask": {
+        "generic": "XXXXXXXX{{number}}",
+        "aadhar": "XXXX XXXX {{number}}",
+        "abha": "XX XXXX XXXX {{number}}",
+        "abha-address": "{{numberstart}}XXXXX{{numberend}}",
+        "phone": "XXXXXX{{number}}",
+        "tourism-portal-id": "XXXXXX{{number}}"
+    },
+    "pilgrim": {
+        "onboarding": {
+            "create_abha_page": {
+                "title": "Link or Create Ayushman Bharat Health Account - ABHA Number",
+                "DESCRIPTION": "ABHA number is a 14 digit number that will uniquely identify you as a participant in India’s digital healthcare ecosystem. ABHA number will establish a strong and trustable identity for you that will be accepted by healthcare providers and payers across the country.",
+                "link_abha": "Link ABHA",
+                "form": {
+                    "title": "Create your ABHA using Aadhaar number",
+                    "FIELD_1": {
+                        "LABEL": "Aadhaar Number",
+                        "PLACEHOLDER": "Enter your Aadhaar number"
+                    },
+                    "FIELD_2": {
+                        "LABEL": "Phone Number",
+                        "PLACEHOLDER": "Enter your phone number"
+                    },
+                    "LINK_INFO": "Already have ABHA number?",
+                    "SUBMIT_TEXT": "Create ABHA number"
+                },
+                "otp_description_aadhar": "Enter the OTP sent to phone number linked with Aadhaar number",
+                "otp_description_phone": "Enter the OTP sent to XXXXXX{{number}}",
+                "aadhar_number": "Aadhaar number",
+                "abha_create_link_success": "ABHA number created and linked successfully."
+            },
+            "link_abha_page": {
+                "otp_description": "Enter the OTP sent to mobile number linked with Aadhaar number",
+                "abha_number": "ABHA number"
+            },
+            "tourism-portal-id": "Tourism Portal ID"
+        }
+    },
+    "field": {
+        "otp": {
+            "label": "OTP",
+            "resend-text": "Resend OTP in <1>00:{{timerValue}}</1>"
+        }
+    }
+}

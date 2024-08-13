@@ -1,0 +1,34 @@
+.abha-info-container {
+  width: 100%;
+  margin: 3.33em 6.66em;
+  max-width: 40vw;
+  text-align: start;
+
+  .info-heading {
+    font-size: 2.133rem;
+    font-weight: 600;
+    line-height: 38px;
+    margin-bottom: 1.1875em;
+    color: rgba(32, 32, 32, 1);
+  }
+
+  .info-content {
+    font-size: 1.06em;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+// @media screen and (min-width: 481px) and (max-width: 1024px) {
+//   .abha-info-container {
+//       max-width: 376px;
+//   }
+// }
+
+// @media screen and (max-width: 480px) {
+//   .number-matched-container {
+//       max-width: 100%;
+//       margin: 1.33em 1.66em;
+//   }
+// }

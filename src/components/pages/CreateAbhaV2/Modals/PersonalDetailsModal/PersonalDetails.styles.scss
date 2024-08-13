@@ -1,0 +1,86 @@
+.personal-details-container {
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 3.33em;
+    width: 100%;
+
+    .personal-details-title {
+        font-size: 2.1rem;
+        font-weight: 600;
+        line-height: 38px;
+        color: rgba(32, 32, 32, 1);
+        margin: 0 auto 0.625em;
+        text-align: center;
+    }
+    .personal-details-description{
+        width: 70%;
+        margin: 0 auto;
+        font-size: 0.93rem;
+        font-weight: 500;
+        line-height: 16px;
+        color: rgba(108, 105, 105, 1);
+        text-align: center;
+    }
+
+    .personal-details-form {
+        padding-top: 1.73em;
+        .submit-button {
+            width: 70%;
+            margin: 3.125em auto 0;
+            display: block;
+            padding: 6px 0;
+            font-family: Mulish;
+            font-size: 1.06rem;
+            font-weight: 600;
+            line-height: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            border: 2px solid rgb(51, 24, 159);
+            color: rgb(255, 255, 255);
+            background: rgb(51, 24, 159);
+            box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .personal-details-container {
+        margin: 0 auto;
+        max-width: 40rem;
+        padding: 1.06em 1.06em;
+        width: 100%;
+    
+        .personal-details-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 16px;
+            color: black;
+            margin: 2.26em auto 1.06em;
+        }
+        .personal-details-description{
+            font-size: .8rem;
+            font-weight: 500;
+            line-height: 16px;
+            color: grey;
+        }
+    
+        .personal-details-form {
+            padding: 2.13em 0;
+            .submit-button {
+                width: 70%;
+                margin: 50px auto 10px;
+                display: block;
+                padding: 6px 0;
+                font-family: Mulish;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                cursor: pointer;
+                border-radius: 5px;
+                border: 2px solid rgb(51, 24, 159);
+                color: rgb(255, 255, 255);
+                background: rgb(51, 24, 159);
+                box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+            }
+        }
+    }
+}

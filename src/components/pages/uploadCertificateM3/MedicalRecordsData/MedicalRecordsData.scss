@@ -1,0 +1,273 @@
+.my-req {
+    display: none;
+}
+
+.medical-records-data {
+    margin-top: 2.67em;
+    padding: 0 5.6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 2.6em;
+
+    .top-parent {
+        display: flex;
+        width: 94%;
+        justify-content: space-between;
+        flex-direction: row;
+
+        .left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 0.8em;
+
+            .heading {
+                font-size: 1.33rem;
+                font-weight: 500;
+                line-height: 23.44px;
+                text-align: left;
+
+                font-weight: 600;
+            }
+        }
+
+        .right {
+            display: flex;
+            gap: 0.6em;
+            justify-content: center;
+            align-items: center;
+
+            .first {
+                position: relative;
+
+                .req {
+                    font-family: Roboto;
+                    font-size: 1.067rem;
+                    font-weight: 400;
+                    line-height: 18.75px;
+                    text-align: left;
+                    color: rgba(51, 24, 159, 1);
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+
+                .red-dot {
+                    background-color: rgba(199, 65, 58, 1);
+                    position: absolute;
+                    border-radius: 50%;
+                    width: 8px;
+                    height: 8px;
+                    top: -4px;
+                    left: 82px;
+                    gap: 0px;
+                    border: 1px 0px 0px 0px;
+                    opacity: 0px;
+                }
+            }
+
+            .second {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                gap: 0.267em;
+
+                .rotating {
+                    animation: rotate 1s linear infinite;
+
+                    @keyframes rotate {
+                        from {
+                            transform: rotate(360deg);
+                        }
+                        to {
+                            transform: rotate(0deg);
+                        }
+                    }
+                }    
+
+                span {
+                    font-size: 1.06rem;
+                    font-weight: 400;
+                    line-height: 18.75px;
+                    text-decoration: underline;
+                    color: rgba(51, 24, 159, 1);
+                }
+            }
+        }
+    }
+
+    .records-data {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 1.53em;
+    }
+
+    .loader {
+        width: 70%;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        margin: 2em auto;
+        box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.15);
+        .circular-task-component {
+            display: flex;
+            justify-content: center;
+            margin-top: 3.625em;
+            margin-bottom: 3em;
+            .loader-container {
+                .loader {
+                    box-shadow: none;
+                    height: 3.75em;
+                    width: 3.75em;
+                }
+            }
+        }
+        .loader-info {
+            margin-bottom: 2.125em;
+            color: #33189f;
+            text-align: center;
+            font-size: 1.06rem;
+            font-weight: 400;
+            margin-left: 13em;
+            margin-right: 13em;
+        }
+    }
+}
+
+.medical-record-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6em;
+    gap: 1.1em;
+    padding-bottom: 2.56em;
+
+    .fetch-documents-button {
+        display: block;
+        margin: 0 1em;
+        padding: 0.6em 5.1em;
+        font-family: Roboto, sans-serif;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        border-radius: 8px;
+        border: 2px solid rgba(51, 24, 159, 1);
+        color: rgba(255, 255, 255, 1);
+        background: rgba(51, 24, 159, 1);
+        box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .my-req {
+        margin-top: 0.25em;
+        display: flex;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 1);
+        padding: 1em 0;
+        cursor: pointer;
+
+        .Heading {
+            position: relative;
+            padding-left: 1.25em;
+
+            span {
+                font-family: Roboto;
+                font-size: 0.875rem;
+                font-weight: 500;
+                line-height: 16.41px;
+                text-align: left;
+            }
+
+            .red-dot-1 {
+                position: absolute;
+                background: rgba(199, 65, 58, 1);
+                border-radius: 50%;
+                width: 6px;
+                height: 6px;
+                top: 10px;
+                right: -8px;
+                gap: 0px;
+                border: 1px 0px 0px 0px;
+                opacity: 0px;
+                border: 1px solid rgba(255, 255, 255, 1);
+            }
+        }
+
+        img {
+            padding-right: 1.8em;
+        }
+    }
+
+    .medical-records-data {
+        background: rgba(255, 255, 255, 1);
+        gap: 0.4em;
+        padding: 0;
+        padding-top: 1.25em;
+        padding-bottom: 4.5em;
+        margin: 0;
+
+        .top-parent {
+            width: 100%;
+            padding: 0 1.25em;
+
+            .left {
+                gap: 0.375em;
+
+                .heading {
+                    font-family: Roboto;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    line-height: 18.75px;
+                    text-align: left;
+                }
+            }
+
+            .right {
+                .first {
+                    display: none;
+                }
+
+                .second {
+                    a {
+                        font-family: Roboto;
+                        font-size: 0.875rem;
+                        font-weight: 400;
+                        line-height: 16.41px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        .records-data {
+            margin-top: 0.75em;
+            width: 100%;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            padding: 0 1.25em;
+        }
+
+        .view-medical-declaration-button {
+            margin: 0;
+            padding: 0 0.53em;
+            font-family: Roboto;
+            font-size: 0.87rem;
+            font-weight: 500;
+            line-height: 16.41px;
+        }
+
+        .fetch-documents-button {
+            margin: 0em;
+            font-family: Roboto;
+            font-size: 0.87rem;
+            font-weight: 500;
+            line-height: 16.41px;
+            text-align: center;
+        }
+    }
+}

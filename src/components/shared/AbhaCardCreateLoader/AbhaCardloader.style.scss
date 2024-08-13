@@ -1,0 +1,20 @@
+.loader-container {
+    .loader {
+        width: 80px;
+        height: 80px;
+        animation: spinner 1s linear infinite;
+
+        path {
+            fill: #33189f;
+        }
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

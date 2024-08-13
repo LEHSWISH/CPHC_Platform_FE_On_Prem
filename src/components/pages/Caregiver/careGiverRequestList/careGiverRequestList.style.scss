@@ -1,0 +1,106 @@
+.care-giver-request {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 1.875em;
+    margin-right: 1.875em;
+    background-color: white;
+
+    .button {
+        display: none;
+    }
+
+    .care-giver-request-title {
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-top: 2em;
+
+        h1 {
+            font-family: Roboto;
+            font-size: 1.33rem;
+            font-weight: 500;
+            line-height: 23.44px;
+            text-align: left;
+
+        }
+    }
+
+    .no-req {
+        flex: 1;
+        display: flex;
+
+        h1 {
+            margin: auto;
+            margin: auto;
+            font-family: Roboto;
+            font-size: 1.33rem;
+            font-weight: 500;
+            line-height: 23px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: #6C6969;
+
+        }
+    }
+
+    .care-given-main {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        flex-grow: 1;
+        overflow: auto;
+        max-height: 38rem;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .care-giver-request {
+        flex: 1;
+        margin-left: 0;
+        margin-right: 0;
+
+        .care-giver-request-title {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+
+            h1 {
+                font-family: Roboto;
+                font-size: 1.125rem;
+                font-weight: 600;
+                line-height: 21.09px;
+                text-align: center;
+                color: #33189F;
+            }
+
+            .button {
+                display: block;
+            }
+        }
+
+        .care-given-main {
+            margin: 0;
+            background-color: rgba(255, 255, 255, 1);
+            width: 100vw;
+
+
+        }
+
+        .no-req {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            h1 {
+
+                font-family: Roboto;
+                font-size: 1.125rem;
+                font-weight: 500;
+                line-height: 21.09px;
+                text-align: center;
+            }
+        }
+    }
+}

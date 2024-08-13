@@ -1,0 +1,144 @@
+.linked-records-container{
+    padding: 2em 5.6em 0;
+    .my-request-mobile{
+        display: none;
+    }
+    .request-div{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 1.93em;
+        .my-request{
+            font-size: 1.06rem;
+            font-weight: 500;
+            line-height: 1.56rem;
+            font-weight: 400;
+            color: #33189F;
+            line-height: 1.25rem;
+            text-decoration: underline;
+            cursor: pointer;
+            margin-right: 0.8em;
+        }
+        .refresh-button{
+            display: flex;
+            gap: 0.3em;
+            margin-left: 0.8em;
+            align-items: center;
+            font-size: 1.06rem;
+            font-weight: 400;
+            color: #33189F;
+            background: transparent;
+            border: none;
+            line-height: 1.25rem;
+            text-decoration: underline;
+        }
+    }
+    .approval-pending-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1em 0 0em;
+        border-radius: 16px;
+        background: #FFFFFF;
+        .content-div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            img{
+                margin-top: 3.33em;
+                margin-bottom: 2.13em;
+            }
+            h2{
+                font-size: 2rem;
+                font-weight: 500;
+                line-height: 1.17em;
+                margin-bottom: 1em;
+            }
+            .link-medical-records-steps {
+                width: 100%;
+                margin: 20px 0 55px 0;
+        
+                .MuiStepLabel-iconContainer:nth-child(1) {
+                    svg:nth-child(1) {
+                        path {
+                            color: #337d38;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .linked-records-container{
+        background-color: white;
+    padding: 0;
+    .my-request-mobile{
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.875rem;
+        padding: 1.14em 1.42em 1.14em;
+        margin: 4px 0;
+        background-color: #FFFFFF;
+        border: 4px solid #33189F0D;
+        border-left: none;
+        border-right: none;
+        .my-request-text{
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            font-weight: 500;
+                .dot{
+                    height: 6px;
+                    width: 6px;
+                    border: 1px;
+                    border-radius: 50%;
+                    background: #C7413A;
+
+                }
+        }
+        img{
+            color: #202020;
+        }
+    }
+
+    .request-div{   
+        margin: 1.25em 1.43em 0.75em;
+        background-color: #FFFFFF;
+        :nth-child(2){
+            display: none;
+        }
+        .my-request{
+            display: none;
+        }
+        .refresh-button{
+            font-size: 0.875rem;
+            span{
+                display: flex;
+                img{
+                    width: 20px;
+                }
+            }
+        }
+    }
+    .approval-pending-div{
+        box-shadow: 0px 0px 5px 0px #2020201A;
+        margin: 1.25em 1.25em 0;
+        padding-left:1.06em ;
+        .content-div{
+            img{
+                width: 2.5rem;
+                margin-top: 2.62em;
+                margin-bottom: 2em;
+            }
+            h2{
+                font-size: 1.25rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+    }
+
+}

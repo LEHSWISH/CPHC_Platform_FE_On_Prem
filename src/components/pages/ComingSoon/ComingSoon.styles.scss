@@ -1,0 +1,104 @@
+.coming-soon-outer-container {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .coming-soon-inner-container {
+        .title {
+            // font-size: clamp(2rem, 3vw + 1rem, 3.75rem);
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 70.31px;
+            text-align: center;
+            padding-top: 8rem;
+            color: rgba(51, 24, 159, 1);
+        }
+
+        .sub-title {
+            // font-size: clamp(1rem, 2vw + 0.5rem, 1.75rem);
+            font-size: 1.86rem;
+            font-weight: 400;
+            line-height: 32.81px;
+            text-align: center;
+            margin-block: 1.6rem 4.4rem;
+            color: rgba(108, 105, 105, 1);
+        }
+
+        .message {
+            // font-size: clamp(1.5rem, 2.5vw + 0.5rem, 2.75rem);
+            font-size: 3rem;
+            font-weight: 600;
+            line-height: 51.56px;
+            text-align: center;
+            color: rgba(32, 32, 32, 1);
+        }
+    }
+
+    .img-container {
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -10;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .coming-soon-outer-container {
+        .coming-soon-inner-container {
+            .title {
+                font-size: 3rem;
+            }
+
+            .sub-title {
+                font-size: 1.5rem;
+            }
+
+            .message {
+                font-size: 2.5rem;
+            }
+        }
+
+        .img-container {
+            img {
+                height: 130px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .coming-soon-outer-container {
+        .coming-soon-inner-container {
+            .title {
+                font-size: 2rem;
+                line-height: 37.5px;
+                padding-top: 12rem;
+            }
+
+            .sub-title {
+                font-size: 1rem;
+                line-height: 37.5px;
+                margin-block: 0.8rem 4.25rem;
+            }
+
+            .message {
+                font-size: 1.5rem;
+                line-height: 29px;
+            }
+        }
+
+        .img-container {
+            img {
+                height: 110px;
+                object-fit: cover;
+            }
+        }
+    }
+}

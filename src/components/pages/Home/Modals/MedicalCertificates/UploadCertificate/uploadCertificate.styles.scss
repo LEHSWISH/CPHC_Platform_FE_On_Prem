@@ -1,0 +1,213 @@
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.upload-certificate-container {
+    margin: 0 auto 2rem;
+    max-width: min(70rem, 100vw);
+    width: 100%;
+    padding: 0 55px;
+
+    .modal-title {
+        margin: 2.625rem auto 2.25rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+        text-align: center;
+        color: rgba(51, 24, 159, 1);
+    }
+
+    .medical-query {
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.1875rem;
+        text-align: center;
+        color: rgba(108, 105, 105, 1);
+    }
+
+    .chose-from {
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1rem;
+        text-align: center;
+        color: rgba(108, 105, 105, 1);
+        margin: 0.75rem 0 2.25rem;
+        padding: 0 0.75rem;
+    }
+
+    .download-form-container {
+        @extend .flex-row-center;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .text {
+            color: #292d32;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+    }
+
+    .link {
+        color: #33189f;
+        font-size: 1rem;
+        text-decoration-line: underline;
+        cursor: pointer;
+        @extend .flex-row-center;
+    }
+
+    .bottom-link {
+        @extend .link;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+
+    .form-container {
+        display: flex;
+        gap: 8px;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+
+        .form-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+            width: 100%;
+
+            &.grid-template-columns-1 {
+                grid-template-columns: 1fr;
+            }
+
+            .round-box {
+                display: flex;
+                width: 100%;
+                height: 308px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+                flex-shrink: 0;
+                border-radius: 8px;
+                border: 1px solid rgba(51, 24, 159, 0.3);
+                background: #fff;
+
+                padding: 1rem;
+                overflow: auto;
+
+                .file-info-row-item {
+                    width: 100%;
+
+                    gap: 0.4rem;
+                    display: flex;
+                    flex-direction: column;
+
+                    .file-info-container-first {
+                        width: 100%;
+                        @extend .flex-row-center;
+
+                        .text {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            font-size: 1.125rem;
+                        }
+
+                        .icon-buttons-container {
+                            @extend .flex-row-center;
+                            justify-content: center;
+                            margin-left: auto;
+                        }
+                    }
+
+                    .deletion-info {
+                        @extend .flex-row-center;
+                        border-radius: 8px;
+                        background: rgba(51, 24, 159, 0.05);
+                        padding: 0.4rem;
+
+                        color: #33189f;
+                        font-size: 0.8rem;
+
+                        span {
+                            margin-left: auto;
+                            color: var(--Neutral-1);
+                            padding: 0.4rem;
+                        }
+                    }
+                }
+            }
+
+            .dotted-box {
+                display: flex;
+                width: 100%;
+                height: 308px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                flex-shrink: 0;
+                padding: 1rem;
+
+                border-radius: 20px;
+                border: 2px dashed rgba(51, 24, 159, 0.3);
+                background: #fff;
+
+                .browse-files {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+
+                    label {
+                        text-decoration-line: underline;
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                        cursor: pointer;
+                        color: #33189f;
+                        text-transform: capitalize;
+                    }
+                }
+
+                .info-text-secondry {
+                    color: rgba(108, 105, 105, 0.8);
+                    text-align: center;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .validation-message {
+        color: var(--Accent-1);
+        text-align: center;
+        font-size: 0.875rem;
+        padding: 0.5rem;
+    }
+
+    .submit-declaration-button {
+        width: 19rem;
+        display: block;
+        margin: 0 auto;
+        padding: 8px 0;
+        font-family: Mulish;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.25rem;
+        cursor: pointer;
+        border-radius: 8px;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(51, 24, 159, 1);
+        box-shadow: 0px 3px 6px 0px rgba(32, 32, 32, 0.3);
+        text-transform: capitalize;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .upload-certificate-container {
+        .form-container {
+            .form-group {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
