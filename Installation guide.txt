@@ -1,0 +1,115 @@
+Installation Guide 
+ 
+
+Setup Steps 
+
+React Version: "18.2.0" 
+
+1. Clone the Repository 
+
+    Open a terminal window. 
+
+    Navigate to the directory where you want to clone the project. 
+
+    Clone the repository from GitHub using the following command: 
+
+ 
+
+# Enter in terminal 
+git clone -b <branch-name> <repository-url> 
+ 
+
+    Replace <branch-name> with the name of the branch you want to clone. 
+
+    Replace <repository-url> with the URL of the GitHub repository. 
+     
+
+branch-name= dham_dev 
+ 
+
+    Navigate into the project directory: 
+     
+    # Enter in terminal 
+
+cd <project-directory> 
+
+Replace <project-directory> with the name of the cloned project folder. 
+
+ 
+
+# Example- 
+cd  CPHC_Platform_FE_On_Prem 
+
+ 
+
+2. Install Dependencies 
+
+    Install the necessary npm packages: 
+     
+
+# Enter in terminal 
+
+npm install 
+
+ 
+
+3. Project Structure 
+ 
+      src/ 
+
+    Purpose: Contains your application’s source code. This directory is not created by default but is a common convention to organize your code. 
+     
+
+Structure: 
+ 
+
+    assets/: Stores static files such as images, fonts, and other media assets. 
+
+    classes/: This folder is responsible for handling HTTP requests, managing authorization, and processing responses using Axios 
+
+    components/: Contains reusable React components. 
+
+    enums/: Contains API endpoints. 
+
+    environment/: Contains environment-specific configurations or settings. 
+
+    interfaces/: TypeScript interfaces that define the structure of API responses. 
+
+    routes/: Contains setup and logic for routing and navigation in your application 
+
+    services/: Contains services or API interaction logic
+        styles/: Stores styling-related files. 
+
+    utils/: The file contains constant values used throughout your application. 
+
+    validations/: This folder might include functions or schemas used to validate user input or data, such as form validation or data integrity checks. 
+     
+     
+     
+
+Commands to Run the React Web Application: 
+
+ 
+
+4. Start the Development Server 
+
+    Open a terminal window. 
+
+    Navigate to the root directory of your React web project:  
+    cd <project-directory> 
+     
+
+Replace <project-directory> with the name of your React web project folder. 
+
+For example, if your project folder is named cphcPlatformMobileApp, use the following command: 
+
+# Enter in terminal 
+cd  CPHC_Platform_FE_On_Prem  
+
+    Start the development server: 
+    # Enter in terminal: 
+    npm start 
+     
+
+This will start the React development server and open your application in the default web browser. 
+ 
