@@ -14,13 +14,22 @@
  */
 
 
+// const environment = {
+//     baseUrlUserService:'https://dev-itda.yatripulse.in:9001/',
+//     baseUrlAbhaService:'https://dev-itda.yatripulse.in:9004/',
+//     baseUrlHealthService:'https://dev-itda.yatripulse.in:9003/',
+//     baseUrlNotificationService:'https://dev-itda.yatripulse.in:9002/', 
+//     frontendUrl: 'https://dev-itda.yatripulse.in/',
+// }
+
 const environment = {
-    baseUrlUserService:'https://dev-itda.yatripulse.in:9001/',
-    baseUrlAbhaService:'https://dev-itda.yatripulse.in:9004/',
-    baseUrlHealthService:'https://dev-itda.yatripulse.in:9003/',
-    baseUrlNotificationService:'https://dev-itda.yatripulse.in:9002/', 
-    frontendUrl: 'https://dev-itda.yatripulse.in/',
+    baseUrlUserService: 'http://127.0.0.1:9001/',
+    baseUrlAbhaService: 'http://127.0.0.1:9004/',
+    baseUrlHealthService: 'http://127.0.0.1:9003/',
+    baseUrlNotificationService: 'http://127.0.0.1:9002/', 
+    frontendUrl: 'http://localhost:5173/',  
 }
+
 
 try {
     // environment.baseUrl=import.meta.env.VITE_API_BASE_URL

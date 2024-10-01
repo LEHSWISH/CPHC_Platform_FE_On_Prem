@@ -30,6 +30,7 @@ function OtpForm(props: OtpFormProps) {
 
     const gotError = false
     const notEnteredOtp = false
+    
     const formik = useFormik({
         initialValues: {
             otp: '',
@@ -166,6 +167,8 @@ function OtpForm(props: OtpFormProps) {
     const formatTimer = () => {
         return timer < 10 ? `0${timer}` : timer
     }
+
+
     return (
         <div className="otp-container">
             <div className="otp-description">

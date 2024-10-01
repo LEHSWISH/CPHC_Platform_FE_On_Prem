@@ -50,10 +50,12 @@ function SigninPasswordForm({
             const timeStamp = new Date().toISOString()
             const password=`${timeStamp}%${hashedPassword}`
             const encryptedPassword=encryptPassword(password)?.toString()
+            // const plainPassword = values.password;
             const sessionId = generateUUID()
             const payload: any = {
                 userName: selection,
                 password: encryptedPassword,
+                // password: plainPassword,
                 sessionId: sessionId,
             }
             if (loading) return

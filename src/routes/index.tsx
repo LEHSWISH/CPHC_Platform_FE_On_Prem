@@ -4,7 +4,7 @@
  * This file defines all the routes for the application. It maps paths to components,
  * sets up nested routes, and configures any route-specific settings or guards.
  * The routing configuration helps in navigating different parts of the application.
- */
+*/
 
 
 import {

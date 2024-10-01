@@ -1,6 +1,6 @@
 import './SignupForm.scss'
 import { useEffect, useState } from 'react'
-import { useFormik } from 'formik'
+import { useFormik } from 'formik'   //hook used
 import {
     TextField,
     Checkbox,
@@ -188,6 +188,8 @@ function SignupForm(props: SignUpFormProps) {
     ) => {
         event.preventDefault()
     }
+
+    //formik Define
     const formik = useFormik({
         initialValues: {
             userName: props.populate.userName ? props.populate.userName : '',
@@ -254,6 +256,11 @@ function SignupForm(props: SignUpFormProps) {
             }
         },
     })
+
+
+    // End Formik
+
+    
     return (
         <div className="signup-container">
             <div className="page-logo">
@@ -268,6 +275,9 @@ function SignupForm(props: SignUpFormProps) {
                     alt="Uttrakhand Simply Heaven!"
                 />
             </div>
+
+            {/* Form using Formik */}
+
             <form
                 className="signup-form"
                 onSubmit={formik.handleSubmit}
@@ -543,14 +553,20 @@ function SignupForm(props: SignUpFormProps) {
                 </button>
                 <div className="login-route">
                     <p>Already have an account?</p>
+
+
                     <NavLink
                         className="navigate"
                         to={`/${coreRoutesEnum.LOG_IN}`}
                     >
                         Log in
                     </NavLink>
+
+                    
                 </div>
             </form>
+
+            {/* Form ends */}
             <div className="advisory">
                 Learn about your &nbsp;
                 <a

@@ -2,6 +2,8 @@
 
 This template provides a minimal setup to get React working in Vite with HMR (Hot Module Replacement) and some ESLint rules.
 
+To create project run command: npm create vite@latest
+
 ## Why Vite, React, and TypeScript?
 
 - **Vite**: Chosen for its fast development experience, leveraging native ES modules and providing instant server start and fast HMR.

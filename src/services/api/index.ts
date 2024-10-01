@@ -57,6 +57,8 @@ export const signUpApi = (args: {
         requestMethod: RequestMethod.POST,
     }) as AxiosPromise
 }
+
+
 export const requestOtpApi = (args: {
     userName: string
     phoneNumber: string
